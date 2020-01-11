@@ -1,0 +1,7 @@
+# Microsoft identity platform and the OAuth 2.0 client credentials flow
+
+You can use the OAuth 2.0 client credentials grant specified in RFC 6749, sometimes called *two-legged OAuth*, to access web-hosted resources by using the **identity** of an **application**. This type of grant is commonly used for **server-to-server** interactions that must run in the background, **without** immediate interaction with a **user**. These types of applications are often referred to as daemons or services accounts. 
+
+The OAuth 2.0 client credentials grant flow permits a web service (confidential client) to use its own credentials, instead of impersonating a user, to authenticate when calling another web service. In this scenario, the client is typically a middle-tier web service, a daemon service, or a web site. For a higher level of assurance, the Microsoft identity platform also allows the calling service to use a certificate (instead of a shared secret) as a credentials.
+
+In a more typical *three-legged OAuth*, a client application is granted permission to access a resource on behalf of a specific user. The permission is delegated from the user to the application, usually during the consent process. However, in the client credentials (two-legged OAuth)flow, permissions are granted directly to the application itself. When the app presents a token to a resource, the resource enforces that the app itself has authorization to perform an action and not the user.
