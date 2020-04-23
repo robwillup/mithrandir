@@ -17,4 +17,22 @@ The stack should be available on every popular development platform and easy for
 Make the fundamental features free for all to use. Release all artifacts as open-source efforts with licensing that should facilitate and not impede adoption.
 
 ### Interoperability & Reach
-The wire protocol must be capable of surviving traversal over common internet infrastructure. 
+The wire protocol must be capable of surviving traversal over common internet infrastructure.
+
+### General Purpose & Performant
+The stack should be applicable to a broad class of use-cases while sacrificing little in performance when compared to a use-case specific stack.
+
+### Layered
+Key facets of the stack must be able to evolve independently. A revision to the wire-format should not disrupt application layer bindings.
+
+### Payload Agnostic
+Different services need to use different message types and encodings such as protocol buffers, JSON, XML, and Thrift; the protocol and the implementations must allow for this. Similarly the need for payload compression varies by use-case and payload type: the protocol should allow for pluggable compression mechanisms.
+
+### Streaming
+Storage systems rely on streaming and flow-control to express large data-sets. Other services, like voice-to-text or stock-tickers, rely on streaming to represent temporally related message sequences.
+
+### Blocking & Non-Blocking
+Support both asynchronous and synchronous processing of the sequence of messages exchanged by a client and server. This is critical for scaling and handling streams on certain platforms. 
+
+
+

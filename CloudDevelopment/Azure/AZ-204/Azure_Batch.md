@@ -9,5 +9,13 @@ Four Tenets of Cloud Computing
 
  ## Azure Batch Features
  * Resource Management
+    * Node Management
+        * Cloud Service Worker Roles
+        * Virtual Machines
+        * Docker Containers
+        * Third Party Applications
+    * Auto-Scaling
+    * Low Priority Nodes
+    * Applications
  * Process Management
- * Resource and Process Monitoring
+ * Resource and Process Monitoring 
