@@ -11,3 +11,11 @@ The SICP book addresses the techniques used to control the intellectual complexi
 Students who complete this subject should have a good feel for the elements of style and aesthetics of programming.
 
 *"We control complexity by building abstractions that hide details when appropriate. We control complexity by establishing conventional interfaces that enables us to construct systems by combining standard, well-understood pieces in a "mix and match" way"*
+
+*"Well-designed computational systems... are designed in a modular manner, so that the parts can be constructed, replaced, and debugged separately."*
+
+## The Elements of Programming
+
+In programming we deal with two kinds of elements: procedures and data. 
+
+### Expressions 
