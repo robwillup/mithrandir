@@ -71,3 +71,7 @@ fn main() {
 Rust is an *ahead-of-time* compiled language, meaning you can compile a program and give the executable to someone else, and they can run it even without having Rust installed.
 
 
+# Crate
+
+Crate is a collection of Rust source code files. There are `binary crate` (executable) and `library crate` (to be used by other programs.)
+
