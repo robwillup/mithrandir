@@ -39,9 +39,13 @@ Relational databases were not created for that huge amount of data. They were cr
 
 NoSQL is just a buzword to address the challenges of the 3 Vs and so a NoSQL database is built to be distributed from the ground up. They also scale by horizontal partitioning and scalle throughput. And they are "schema-free" which means that there is no schema management. 
 
+Today's applications are required to be **highly responsive** and **always online**. To achieve low latency (highly responsive) and high availability (always online), instances of these applications need to be deployed in datacenters that are close to their users. Applications need to respond in real time to large changes in usage at peak hours, store ever increasing volumes of data, and make this data available to uers in milliseconds.
+
 ## What is Cosmos DB?
 
 * Evolution of DocumentDB
 * Virtually unlimited scale
 * Turnkey global distribution
 * Multi-model / Multi-API
+
+Azure Cosmos DB is Microsoft's globally distributed, multi-model database service.
