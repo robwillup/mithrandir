@@ -19,3 +19,16 @@ Some key features of Azure Functions include:
 * **Flexible development:** Set up continuous integration and deploy your code through GitHub, Azure DevOps Services, and other supported development tools.
 * **Stateful serverless architecture:** Ochestrate serverless applications with Durable Functions.
 * **Open-source:** The Functions runtime is open-source and available on GitHub.
+
+## Azure Functions Core Tools
+* Command line tools
+  * Creating new Function App
+  * Adding functions
+  * Deploying to Azure
+
+Includes the Azure Functions runtime
+
+Azure Storage Emulator
+* Windows only
+* Use a real Storage Account instead
+
