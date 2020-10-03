@@ -1,0 +1,31 @@
+# Elasticity and Scalability
+
+Both Elasticity and Scalabitiy are related to handling the system's workload. The fundamental concept of the two is **adaptability**.
+It refers to the system environment's ability to use as many resources as required. 
+
+The difference between these two are:
+
+1. Elasticity is:
+
+> a tactical resource allocation operation. It provides the necessary resources required for the current task and handles varying loads
+> for short periods. For example, running a sentiment analysis algorithm, doing database backups or just taking on user traffic surges
+> on a website.
+
+2. Scalability is:
+
+> a strategic resource allocation operation. Scalability handles the increase and decrease of resources according to the system's workload
+> demands.
+
+These are their main benefits:
+
+* Cost-effectiveness. Cloud scalability and cloud elasticity features constitute an effective resource management strategy
+* Consistent performance
+* Service availability.
+
+## What is Cloud Elasticity?
+
+Cloud elasticity i a system's ability to manage available resources according to the current workload requirements dynamically.
+
+## What is Cloud Scalability?
+
+Cloud scalability is the ability of the system's infrastructure to handle growing workload requirements while retaining a consistent performan adequately.
