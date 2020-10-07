@@ -19,4 +19,19 @@ You should use a service principal to provide registry access in **headless scen
   * Pull: Deploy containers from a registry to orchestration systems including Kubernetes, DC/OS, and Docker Swarm.
   * Push: Build container images and push them to a registry using continuous integration and deployment solutions such as Azure pipelines or Jenkins.
   
-  W
+# Create a service principal
+
+This [link](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-service-principal#create-a-service-principal) to the official documentation contains a script demonstrating how to create a new service principal and assign it an ACR role.
+
+  
+# Use an existing service principal
+
+This [link](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-service-principal#use-an-existing-service-principal) to the official documentation contains a script demonstrating how to assign an ACR role to an existing service principal.
+
+# Authenticate with the service principal
+
+Once you have a service principal that you've granted access to your container registry, you can configure its credentials for access to "headless" services and applications, or enter them using the `docker login` command. User the following values:
+
+ * User name - service principal application ID (also called client ID)
+ * Password - service principal password (also called client secret)
+ 
