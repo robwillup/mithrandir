@@ -39,7 +39,7 @@ Fun Fact: Every 60 seconds there are:
 
 Relational databases were not created for that huge amount of data. They were created in a time where scalability would not grow so fast, and they would scale by getting more memory periodically. So NoSQL came to solve this problem and scale on demand for volume, variety and velocity. 
 
-NoSQL is just a buzword to address the challenges of the 3 Vs and so a NoSQL database is built to be distributed from the ground up. They also scale by horizontal partitioning and scalle throughput. And they are "schema-free" which means that there is no schema management. 
+NoSQL is just a buzword to address the challenges of the 3 Vs and so a NoSQL database is built to be distributed from the ground up. They also scale by horizontal partitioning and scale throughput. And they are "schema-free" which means that there is no schema management. 
 
 Today's applications are required to be **highly responsive** and **always online**. To achieve low latency (highly responsive) and high availability (always online), instances of these applications need to be deployed in datacenters that are close to their users. Applications need to respond in real time to large changes in usage at peak hours, store ever increasing volumes of data, and make this data available to uers in milliseconds.
 
