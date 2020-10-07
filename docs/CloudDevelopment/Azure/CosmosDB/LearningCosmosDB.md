@@ -1,5 +1,7 @@
 # Learning Cosmos DB
 
+![CosmosDB](https://chsakell.files.wordpress.com/2017/08/azure-cosmos-documentdb-06.png)
+
 Topics:
 
 * Global distribution
