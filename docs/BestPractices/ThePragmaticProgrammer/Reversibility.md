@@ -6,7 +6,7 @@ There is always more than one way to implement something, and there is usually m
 
 The problem is that critical decisions aren't easily reversible.
 
-Aim to produce flexible, adaptable software.
+## *Aim to produce flexible, adaptable software.*
 
 Abstract the idea of database out of other code domains to the point where this abstraction simply provides persistence as a service.
 
