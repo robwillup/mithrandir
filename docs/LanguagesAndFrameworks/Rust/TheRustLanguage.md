@@ -8,6 +8,15 @@
 > 
 > *- Wikipedia*
 
+Rust is a modern systems programming language, focusing on safety, speed, and concurrency. It accomplishes these goals by being memory safe without using garbage collection.
+
+Here is a simple "Hello world":
+
+```rust
+fn main() {
+  println!("Hello, world!");
+```
+
 ## Content
 
 [The Book](TheBook/TheRustProgrammingLanguageBook.md)
