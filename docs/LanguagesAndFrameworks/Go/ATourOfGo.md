@@ -186,3 +186,110 @@ func main() {
     fmt.Println(v.Abs())
 }
 ```
+
+## Method example
+
+```go
+package main
+
+type Test struct {
+    Name string
+}
+
+func (t *Test) getName() (name string) {
+    name = t.Name
+    return
+}
+
+func main() {
+    t := Test{}
+    t.Name = "Rob"
+    print(t.getName())
+}
+```
+
+## Choosing a value or pointer
+
+There are two reasons to use a pointer receiver.
+
+The first is so that the method can modify the value that its receiver points to.
+
+The second is to avoid copying the value on each method call. This can be more efficient if the
+receiver is a large struct, for example.
+
+## Interfaces
+
+An *interface type* is defined as a set of method signatures.
+
+A value of interface type can hold any value that implements those methods.
+
+### Interfaces are implemented implicitly
+
+A type implements an interface by implementing its methods. There is not explicit declaration of 
+intent, no "implements" keyword.
+
+Implicit interfaces decouple the definition of an interface from its implementation, which could
+then appear in any package without prearrangement.
+
+### An example of using interface
+
+```go
+package main
+
+import "fmt"
+
+type I interface {
+    Add() int
+}
+
+type Fruits struct {
+    Apples  int
+    Oranges int
+}
+
+type Objects struct {
+    Cars int
+    Houses int
+}
+
+func (f Fruits) Add() int {
+    return f.Apples + f.Oranges
+}
+
+func (o *Objects) Add() int {
+    return o.Cars + o.Houses
+}
+
+func main() {
+    var inter I
+    f := Fruits{20,25}
+    o := Objects{3,2}
+    inter = f
+    fmt.Printf("%d\n", inter.Add())
+    inter = &o
+    fmt.Printf("%d\n", inter.Add())    
+}
+```
+
+### Interface values
+
+Under the hood, interface values can be thought of as a tuple of a value and a concret type:
+
+    (value, type)
+    
+An interface value holds a value of a specific underlying concret type.
+
+Calling a method on an interface value executes the method of the same name on its unerlying type.
+
+### The empty interface
+
+The interface type that specifies zero methods is known as the *empty interface*:
+
+`interface{}`
+
+An empty interace may hold values of any type.
+
+Empty interfaces are used by code that handles values of unknown type.
+
+## Type assertions
+
