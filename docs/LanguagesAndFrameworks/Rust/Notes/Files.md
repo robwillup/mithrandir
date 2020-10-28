@@ -39,3 +39,39 @@ fn main() {
         }
 }
 ```
+
+## Example
+
+This is a simple but complete example demonstrating how to:
+
+1. check if a file exists
+2. create the file if it does not exist
+3. append text to the file
+4. read the file
+5. write the file content to STDOUT
+
+````rust
+use std::fs::OpenOptions;
+use std::io::prelude::*;
+
+fn main() {
+    let exists = std::path::Path::new("file.txt").exists();
+
+    if exists == false {
+        std::fs::File::create("file.txt").expect("Could not create file");
+    }
+
+    let mut file = OpenOptions::new()
+       .write(true)
+       .append(true)
+       .open("file.txt")
+       .unwrap();
+
+    if let Err(e) = writeln!(file, "some text") {
+        eprintln!("Could not write to file {}", e);
+    }
+
+    let content = std::fs::read_to_string("file.txt");
+    println!("{}", content);
+}
+```
