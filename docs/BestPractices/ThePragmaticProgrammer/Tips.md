@@ -22,3 +22,13 @@ capable of doing? Try to stump your
 colleagues who use the same editor. 
 Try to accomplish any given editing task in 
 as  few keystrokes as possible.
+
+## 23. Always use Source Code Control Systems
+
+Always. Even if you are a single-person team on a one-week project. Even if it's a 
+"throw-away" prototype. Even if the stuff you're working on isn't source code. Make sure 
+that everything is under source code control—documentation, phone number lists, memos
+to vendors, makefiles, build and release procedures, that little shell script that burns the CD
+master—everything. We routinely use source code control on just about everything we
+type (including the text of this book). Even if we're not working on a project, our day-to-day
+work is secured in a repository.
