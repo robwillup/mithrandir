@@ -15,6 +15,7 @@ Here is a simple "Hello world":
 ```rust
 fn main() {
   println!("Hello, world!");
+}
 ```
 
 ## Content
