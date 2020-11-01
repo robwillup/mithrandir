@@ -9,7 +9,10 @@ In this repo I try satiate my thirst for computer science and software engineeri
 # Content
 
 ## [Best Practices](docs/BestPractices/BestPractices.md)
-## Cloud
+## Cloud Computing
+
+[Cloud Computing](CloudComputing/../docs/CloudComputing/README.md)
+
 ## Computer Science Theory
 ## gRPC
 ## IoT
