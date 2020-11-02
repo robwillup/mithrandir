@@ -12,4 +12,6 @@ To use APIM, administrators create APIs. Each API consists of one or more operat
 *  **Enabling ISV partner ecosystems** by offering fast partner onboarding through the developer portal and building and API facade to decouple from internal implementations that are not ripe for partner consumption.
 *  **Running an internal API program** by offering a centralized location for the organization to communicate about the availability and latest changes to APIs, gating access based on organizational accounts, all based on a secured channel between the API gateway and the backend.
 
+## Policies
 
+[Policies](./Policies.md)
