@@ -5,3 +5,9 @@ Azure Service Fabric uses certificates to
 secure inter-service communication and client 
 calls. APIM needs to pass the client certificate
 to be able to authenticate.
+
+### What is the default pricing tier for APIM?
+
+Developer.
+
+
