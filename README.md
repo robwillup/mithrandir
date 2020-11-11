@@ -17,6 +17,8 @@ In this repo I try satiate my thirst for computer science and software engineeri
 ## gRPC
 ## IoT
 ## Programming Languages and Frameworks
+[Go](docs/LanguagesAndFrameworks/Go/README.md)
+
 [Rust](docs/LanguagesAndFrameworks/Rust/TheRustLanguage.md)
 
 [Elixir](docs/LanguagesAndFrameworks/Elixir/README.md)
