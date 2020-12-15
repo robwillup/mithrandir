@@ -4,4 +4,6 @@
 
 ## Studies for Exam AZ-204
 
+[Preparing to take the exam](AZ-204/PreparingToTakeAz204.md)
+
 [APIM](AZ-204/APIM/About.md)

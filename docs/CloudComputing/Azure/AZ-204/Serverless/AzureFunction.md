@@ -32,3 +32,14 @@ Azure Storage Emulator
 * Windows only
 * Use a real Storage Account instead
 
+You are developing an application that uses Azure Blob storage. The application must read the transaction logs of all the changes that occur to the blobs and the blobs metadata in the storage account for auditing purposes. The changes must be in the order in which they occurred, include only create, update, delete, and copy operations and be retained for compliance reasons. You need to process the transactions logs asynchronously. What should you do? 
+
+A. Process all Azure Blob storage events by using Azure Event Grid with a subscriber Azure Function app.
+
+B. Enable the change feed in the Storage Account and process all changes for available events.
+
+C. Process all Azure Storage Analytics logs for successful blob events.
+
+D. Use the Azure Motinor HTTP Data Collector API and scan the request body for successful blob events.
+
+**Correct answer: B**
