@@ -17,7 +17,7 @@ https://docs.microsoft.com/en-us/learn/certifications/exams/az-204
 
 ### Notes from the official page:
 
-
+* Candidates must should have experience
 
 ## Question Format Types:
 
