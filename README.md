@@ -14,11 +14,20 @@ In this repo I try satiate my thirst for computer science and software engineeri
 
 ## Cloud Computing
 
-[Cloud Computing](CloudComputing/../docs/CloudComputing/README.md)
+[Cloud Computing](docs/CloudComputing/README.md)
 
-## Computer Science Theory
+## Computer Science
+
+[Computer Science](docs/ComputerScience/README.md)
+
 ## Cyber Security
-## gRPC
+
+[Cyber Security](docs/CyberSec/README.md)
+
+## Distributed Computing
+
+[Distributed Computing](docs/DistributedComputing/README.md)
+
 ## IoT
 ## Programming Languages and Frameworks
 [.NET](docs/LanguagesAndFrameworks/.NET/README.md)
