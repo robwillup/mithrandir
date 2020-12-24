@@ -29,6 +29,9 @@ In this repo I try satiate my thirst for computer science and software engineeri
 [Distributed Computing](docs/DistributedComputing/README.md)
 
 ## IoT
+
+[IoT](docs/IoT/README.md)
+
 ## Programming Languages and Frameworks
 [.NET](docs/LanguagesAndFrameworks/.NET/README.md)
 
