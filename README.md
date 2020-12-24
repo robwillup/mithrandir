@@ -8,7 +8,10 @@ In this repo I try satiate my thirst for computer science and software engineeri
 
 # Content
 
-## [Best Practices](docs/BestPractices/BestPractices.md)
+## Best Practices
+
+[Best Practices](docs/BestPractices/README.md)
+
 ## Cloud Computing
 
 [Cloud Computing](CloudComputing/../docs/CloudComputing/README.md)
