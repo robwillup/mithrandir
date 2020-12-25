@@ -56,5 +56,31 @@
 * manage keys, secrets and certificates by using the KeyVault API
 * implement Managed Identities for Azure resources
 
+## Monitor, troubleshoot, and optimize Azure solutions
+**Integrate caching and content delivery within solutions**
+
+* develop code to implement CDNs in solutions
+* configure cache and expiration policies for FrontDoor, CDNs, or Redis caches Store and retrieve data in Azure Redis cache
+
+**Instrument solutions to support monitoring and logging**
+
+* configure instrumentation in an app or service by using Application Insights
+* analyze log data and troubleshoot solutions by using Azure Monitor
+* implement Application Insights Web Test and Alerts
+* implement code that handles transient faults
+
+## Connect and Consume Azure services and third-party services
+
+**Develop and App Service Logic App**
+
+* create a Logic App
+* create a custom connector for Logic Apps
+* create a custom template for Logic Apps
+
+**Implement API Management**
+
+* Create an APIM instance
+* 
+
 
 
