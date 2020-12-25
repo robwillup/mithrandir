@@ -79,8 +79,20 @@
 
 **Implement API Management**
 
-* Create an APIM instance
-* 
+* create an APIM instance
+* configure authentication for APIs
+* define policies for APIs
+
+**Develop event-based solutions**
+
+* Implement solutions that use Azure Event Grid
+* Implement solutions that use Azure Notification Hubs
+* Implement solutions that use Azure Event Hub
+
+**Develop Message-based solutions**
+
+* implement solutions that use Azure Service Bus
+* implement solutions that use Azure Queue Storage queues
 
 
 
