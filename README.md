@@ -41,6 +41,9 @@ In this repo I try satiate my thirst for computer science and software engineeri
 
 [Elixir](docs/LanguagesAndFrameworks/Elixir/README.md)
 ## Math
+
+[Math](docs/Math/README.md)
+
 ## Physics
 ## Modern Authentication
 ## Paradigms
