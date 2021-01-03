@@ -15,3 +15,25 @@ To use APIM, administrators create APIs. Each API consists of one or more operat
 ## Policies
 
 [Policies](./Policies.md)
+
+## Areas of Focus for the Exam
+
+* service tiers
+  * consumption tier: pay per call to APIM
+  * developer tier: testing and validation. No SLA
+  * basic tier: sla
+  * standard: ad integration
+  * premium: increased SLA, multi region deployments
+  * isolated: completely isolated
+* caching
+  * Internal: cache provided within APIM service
+    * limited in size based on APIM tier.
+    * Not available on the consumption tier
+  * External: Redis compatible cache outside of APIM such as Azure Cache for Redis
+  * both types of caching are configured in the APIM policies
+* Access restriction and authentication
+  * access restriction: check for http header, limit call rate by subscription, restrict by IP address, usage quota per key, validate JWT
+  * Basic Auth, client cert, managed identity auth
+* Policy definition
+  * 
+
