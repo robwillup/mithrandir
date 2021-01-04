@@ -19,6 +19,8 @@
 * What are some examples of Statements?
   * Format conversion from XML to JSON.
   * call rate limiting
+  * enforce existence and/or value of an HTTP header
+  * Caches response according to the specified cache control configuration
 
 > Policies are applied inside the gateway which sits between the API consumer and the managed API. The gateway receives all requests and usually forwards them unaltered to the underlying API. However, a policy can apply changes to both the inbound request and outbound response.
 
