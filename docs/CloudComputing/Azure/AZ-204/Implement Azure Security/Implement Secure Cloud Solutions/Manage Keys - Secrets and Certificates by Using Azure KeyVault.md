@@ -30,3 +30,14 @@ This is a service which allows you to securely store and access secrets.
 * PowerShell
   * Provision a KeyVault resource:
     New-AzKeyVault -VaultName 'kv-demo' -ResourceGroupName 'group-demo' -Location 'Brazil South'
+
+## Azure KeyVault Soft-delete
+
+Allows recovery of the deleted vaults and key vault objects (keys, secrets and certificates).
+
+Soft delete is enabled by default for all new KeyVaults
+
+## Azure KeyVault Purge Protection
+
+When purge protection is enabled, a vault or an object in the deleted state cannot be purged until the retention period has passed.
+

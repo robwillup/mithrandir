@@ -12,4 +12,24 @@ Ideally, the candidate for this exam will have 1-2 years of professional develop
 
 ## Skills Measured
 
-[Skills Measured](SkillsMeasured.md)
+[Full list](SkillsMeasured.md)
+
+### Develop Azure Compute Solutions
+
+[Develop Azure Compute Solutions](./Develop%20Azure%20Compute%20Solutions/README.md)
+
+### Develop for Azure Storage
+
+[Develop for Azure Storage](./Develop%20for%20Azure%20Storage/README.md)
+
+### Implement Azure Security
+
+[Implement Azure Security](./Implement%20Azure%20Security/README.md)
+
+### Monitor, troubleshoot and optimize Azure solutions
+
+[Monitor, troubleshoot and optimize Azure solutions](./Monitor-Troubleshoot-and-Optimize%20Azure%20Solutions/README.md)
+
+### Connect to and Consume Azure Services and Third-Party Services
+
+[Connect to and Consume Azure Services and Third-Party Services](./Connect%20to%20and%20Consume%20Azure%20Services%20and%20Third-Party%20Services/README.md)
