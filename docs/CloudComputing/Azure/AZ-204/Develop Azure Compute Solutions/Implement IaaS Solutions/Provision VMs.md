@@ -26,5 +26,14 @@ If you use Azure to create the operating system disk, the computer name and the 
 ### Location
 All resources created in Azure are distributed across multiple geographical regions around the world. Usually, the regions is called location when you create a VM. Form a VM, the location specifies where the virtual hard disks are stored.
 
+Here are some of the ways you can get a list of available locations:
+
+| Method | Description|
+|:-:|:-:|
+| Azure Portal | Select a location from the list when you create a VM |
+| Azure PowerShell | Use the Get-AzLocation command |
+| REST API | Use the list locations operations |
+| Azure CLI | Use the az account list-locations operation |
+
 ### VM Size
 The size of the VM that you use is determined by the workload that you want to run. The size that you choose then determines factors such as processing power, memory, and storage capacity. 

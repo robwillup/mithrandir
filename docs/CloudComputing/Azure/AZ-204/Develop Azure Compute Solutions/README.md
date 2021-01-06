@@ -1,6 +1,8 @@
+# Objectives of the Exam
+
 # Implement IaaS Solutions
 
-* Provision VMs
+* [Provision VMs](./Implement%20IaaS%20Solutions/Provision%20VMs.md)
 * Configure VMs for remote access
 * Create ARM templates
 * Create container images for solutions by using Docker
