@@ -1,5 +1,15 @@
 # About the AZ-204 Exam
 
+## Update, Jan 06th, 2021
+
+I passed the exam!!! Yay!!!!!!!!
+
+I thank God for giving me strength to study. Many thanks to my wife, daughter! I also thank my mother and other family member for their support.
+
+Here's my badge:
+
+<img src="./azure-developer-associate-600x600.png" width=300/>
+
 AZ-204: Developing solutions for Microsoft Azure.
 
 In order to take this exam, candidates should have subject matter expertise in designing, building, testing and maintaining cloud applications and services on Microsoft Azure. 
