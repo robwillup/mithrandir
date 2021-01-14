@@ -29,4 +29,4 @@ Ideally logs we care about should be aggregated to a common store
 * Even Hub
   * Good to sent to external solutions
 * Log Analytics
-  * Good for storage and analytical analysisrr
+  * Good for storage and analytical analysis
