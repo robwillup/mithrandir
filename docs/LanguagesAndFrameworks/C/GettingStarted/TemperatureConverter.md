@@ -44,6 +44,9 @@ int main(void){
 
     printf("The corresponding temperature in Celsius is: %.2f", temperatureC);
 
+    // for integer we use %d as the format specifier
+    // for unsigned integer the format specifier is %u
+
     return 0;
 }
 ```
