@@ -42,7 +42,7 @@ int main(void){
 
     float temperatureC = (temperatureF - 32.0) * 5.0 / 9.0;
 
-    printf("The corresponding temperature in Celsius is: %f", temperatureC);
+    printf("The corresponding temperature in Celsius is: %.2f", temperatureC);
 
     return 0;
 }
