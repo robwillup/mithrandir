@@ -20,3 +20,30 @@ Variable names must start with either an underscore or a letter, digits are not 
 
 * snake_case, recent_files
 * camelCase, userName
+
+## Reading user input
+
+```c
+scanf("%f", &temperatureF);
+```
+> Reminder: the ampersand & in front of a variable gets its address.
+
+## Complete Code
+
+```c
+#include <stdio.h>
+
+int main(void){
+    printf("Enter temperature in Fahrenheit: ");
+    
+    float temperatureF;
+    
+    scanf(%f, &temperatureF);
+
+    float temperatureC = (temperatureF - 32.0) * 5.0 / 9.0;
+
+    printf("The corresponding temperature in Celsius is: %f", temperatureC);
+
+    return 0;
+}
+```
