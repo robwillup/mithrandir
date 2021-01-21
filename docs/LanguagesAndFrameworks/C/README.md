@@ -122,3 +122,11 @@ C is a procedural language that uses *procedures* as the building blocks.
 
 Procedures are also known as methods, functions or routines.
 
+## Some Important Applications of C
+
+* Supercomputers. They are powered by the Unix/Linux operating system, and their kernel is written in C.
+* Embedded Systems and Hardware-level Programming
+* Mars Curiosity Rover Flight Software
+* The Linux kernel is almost entirely written in C.
+* Highly-optimized Libraries (e.g. FFTW)
+
