@@ -38,3 +38,20 @@ scanf("%39s", name)
 The reason we don't use an ampersand (&) in front of the variable in scanf is because in C "the name of an array is equivalent to the address of its first element"
 
 To print a string, you need to use the format specifier in printf("%s \n", name)
+
+## Example
+```c
+#include <stdio.h>
+
+int main(void) {
+    printf("What's your name? ");
+
+    char name[40];
+    scanf("%39s", name);
+
+    printf("\n");
+    printf("Nice to meet you, %s!\n", name);
+
+    return 0;
+}
+```
