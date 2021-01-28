@@ -10,3 +10,13 @@ Philosophy of Java
   * Understandable code over clever code
 * Conservative
   * Backward compatibility
+
+## Java Code Example
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello Bilbo");
+  }
+}
+```
