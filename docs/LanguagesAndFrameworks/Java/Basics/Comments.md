@@ -4,10 +4,10 @@ Similar to C, Java has *Block comments*:
 
 ```java
 /* This
-* is 
-* a
-* block
-* comment
+is 
+a
+block
+comment
 */
 ```
 
