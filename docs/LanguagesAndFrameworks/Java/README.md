@@ -20,3 +20,16 @@ public class Main {
   }
 }
 ```
+
+## JRE and JDK
+
+JRE:
+* Java Runtime Environment
+* Enables Java code execution
+
+JDK:
+* Java Development Kit
+* Provides tools required to create Java apps
+* Open source version known as OpenJDK
+
+
