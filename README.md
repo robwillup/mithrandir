@@ -37,7 +37,7 @@ In this repo I try satiate my thirst for computer science and software engineeri
 
 [Go](docs/LanguagesAndFrameworks/Go/README.md)
 
-[Rust](docs/LanguagesAndFrameworks/Rust/TheRustLanguage.md)
+[Rust](docs/LanguagesAndFrameworks/Rust/README.md)
 
 [Elixir](docs/LanguagesAndFrameworks/Elixir/README.md)
 ## Math
