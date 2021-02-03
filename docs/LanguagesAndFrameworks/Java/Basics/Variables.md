@@ -35,3 +35,5 @@
     * char accentedU = '\u00DA'; // Ú
   * boolean
     * boolean iLoveCSharp = true;
+
+Primitive Types are stored by Value
