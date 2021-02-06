@@ -40,6 +40,11 @@ In this repo I try satiate my thirst for computer science and software engineeri
 [Rust](docs/LanguagesAndFrameworks/Rust/README.md)
 
 [Elixir](docs/LanguagesAndFrameworks/Elixir/README.md)
+
+[C](docs/LanguagesAndFrameworks/C/README.md)
+
+[Java](docs/LanguagesAndFrameworks/Java/README.md)
+
 ## Math
 
 [Math](docs/Math/README.md)
