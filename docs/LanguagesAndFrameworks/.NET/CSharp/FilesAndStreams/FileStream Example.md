@@ -30,6 +30,6 @@ public void Process()
         string line = inputStreamReader.ReadLine();
         string processedLine = line.ToUpperInvariant();
         outputStreamWriter.WriteLine(processedLine);
-    }+-
+    }
 }
 ```
