@@ -12,6 +12,10 @@ In this repo I try satiate my thirst for computer science and software engineeri
 
 [Best Practices](docs/BestPractices/README.md)
 
+## Design Patterns
+
+[Best Practices](docs/DesignPatterns/README.md)
+
 ## Cloud Computing
 
 [Cloud Computing](docs/CloudComputing/README.md)
