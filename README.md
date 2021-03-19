@@ -14,7 +14,7 @@ In this repo I try satiate my thirst for computer science and software engineeri
 
 ## Design Patterns
 
-[Best Practices](docs/DesignPatterns/README.md)
+[Design Patterns](docs/DesignPatterns/README.md)
 
 ## Cloud Computing
 
