@@ -1,7 +1,6 @@
 # Creational Design Patterns
 
-These design patterns relate to class instantiation. This pattern can be further divited into *class-creation patterns* and *object-creation* patterns. Class-creation patterns
-use inheritance effectivelly in the intantiation process, object-creation pattern uses delegation to get the job done.
+These design patterns relate to class instantiation. This pattern can be further divided into *class-creation patterns* and *object-creation* patterns. Class-creation patterns use inheritance effectively in the instantiation process, object-creation pattern uses delegation to get the job done.
 
 * Abstract Factory
 
@@ -26,3 +25,5 @@ use inheritance effectivelly in the intantiation process, object-creation patter
  * Singleton
 
   A class of which only a single instance can exist
+
+
