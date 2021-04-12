@@ -22,3 +22,25 @@ Packages are Go's code organization strategy.
   * Contains a main() function
   * can be in any directory
   * focus on app setup and initialization
+
+## Naming Packages
+
+Naming recommendations:
+
+* Short and clear
+* lowercase
+* no underscores
+* prefer nouns
+* abbreviate judiciously (carefully and consciously)
+* don't steal good names from users (event, etc)
+
+**Examples:**
+
+* package utilities -> vague
+* package data_layer -> too long, contains underscore
+* package dl -> unclear
+* package time -> clear anc concise
+* package json -> clear and concise
+
+## Naming Package Contents
+

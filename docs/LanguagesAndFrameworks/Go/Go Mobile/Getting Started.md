@@ -23,6 +23,10 @@ $ go get golang.org/x/mobile/cmd/gomobile
 
 ## Installing the Android NDK
 
+To install the Android Native Development Kit (NDK), follow these steps:
 
+1. Install Android Studio
+2. Once installed, load any project, or create a new one.
+3. With the project opened, click on `Tools` >> 
 
 ## Getting and Running a Sample app
