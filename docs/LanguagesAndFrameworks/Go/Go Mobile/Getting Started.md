@@ -27,6 +27,65 @@ To install the Android Native Development Kit (NDK), follow these steps:
 
 1. Install Android Studio
 2. Once installed, load any project, or create a new one.
-3. With the project opened, click on `Tools` >> 
+3. With the project opened, click on `Tools` >> `SDK Manager` >> `SDK Tools` >> and check `NDK (Side by side)` and `CMake`.
+4. Click `Apply` and `Ok`.
 
-## Getting and Running a Sample app
+## Create an Environment Variable for NDK
+
+After installing the NDK, create the following environment variable:
+
+```
+$ANDROID_NDK_HOME = /c/Users/my-user/AppData/Local/Android/Sdk/ndk/22.1.7171670/
+```
+
+## Installing ADB on Windows
+
+1. Download the latest version from here: https://dl.google.com/android/repository/platform-tools-latest-windows.zip
+2. Extract the contents to an easily accessible folder
+3. In your command prompt, navigate to that folder
+4. Enable developer mode on your phone and then connect it to your PC
+5. In the command prompt enter the following command: `adb devices`
+6. Allow USB debugging access from your phone.
+7. Reenter the previous command. You should see a message message like:
+
+```
+List of devices attached
+9d1ds14156d     device
+```
+
+## Install gomobile
+
+```bash
+$ go get golang.org/x/mobile/cmd/gomobile
+$ gomobile init
+```
+
+## Grab the Demo App
+
+```bash
+$ go get -d golang.org/x/mobile/example/basic
+```
+
+## Building
+
+```bash
+$ gomobile build -target=android golang.org/x/mobile/example/basic
+```
+
+## Deploying to Android
+
+The above command is going to generate a file with the extension `.apk`, which can be installed on an Android device.
+
+To install it, with your device connected, run the following command:
+
+```bash
+$ adb install <path_to_apk>
+```
+
+OR
+
+```bash
+$ gomobile install golang.org/x/mobile/example/basic
+```
+
+After this, you will see a new icon on your Android device.
