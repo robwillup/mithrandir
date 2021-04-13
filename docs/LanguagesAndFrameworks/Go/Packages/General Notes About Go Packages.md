@@ -44,3 +44,18 @@ Naming recommendations:
 
 ## Naming Package Contents
 
+* avoid stutter
+  * http.HTTPServer -> stutter, repeats `http`
+  * http.Server -> better
+* simplify function names
+  * time.NewTime | time.Time (simplifies)
+  * db.ConnectToDatabase | db.Connect (simplifies)
+
+## Lifecycle of a Package
+
+1. Import required packages
+2. set variables to initial values
+3. call init() function
+
+
+
