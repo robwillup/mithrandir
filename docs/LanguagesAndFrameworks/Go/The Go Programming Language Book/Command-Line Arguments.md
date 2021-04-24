@@ -60,4 +60,45 @@ for {
 
 Loops of this form may be terminated in some other way, like a break or a return statement.
 
-Another form of the for loop iterates of a range of values from a data type like a string or a slice. To illustrate, here's a second version of 
+Another form of the for loop iterates of a range of values from a data type like a string or a slice. To illustrate, here's a second version of echo:
+
+```go
+// This program prints its command-line arguments
+package main
+
+import (
+	"fmt"
+	"os"
+)
+
+func main() {
+	s, sep := "", ""
+	for _, arg := range os.Args[1:] {
+		s += sep + arg
+		sep = " "
+	}
+	fmt.Println(s)
+}
+```
+
+The `_` in the range loop is known as a *blank identifier*. The blank identifier may be used whenever syntax requires a variable name but program logic does not, for instance to discard an unwanted loop index when we require only the element value.
+
+Most Go programmers would likely use `range` and `_` to write the echo program above, since the indexing over `os.Args` is implicit, not explicit, and thus easier to get right.
+
+Here's a simpler and more efficient solution:
+
+```go
+// This program prints its command-line arguments
+package main
+
+import (
+        "fmt"
+        "os"
+        "strings"
+)
+
+func main() {
+        fmt.Println(strings.Join(os.Args[1:], " "))
+}
+```
+
