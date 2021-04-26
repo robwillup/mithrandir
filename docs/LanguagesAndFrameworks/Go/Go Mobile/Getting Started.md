@@ -89,3 +89,45 @@ $ gomobile install golang.org/x/mobile/example/basic
 ```
 
 After this, you will see a new icon on your Android device.
+
+### Deploying Error
+
+When running the `gomobile install` command, you may encounter this error:
+
+```bash
+$ gomobile install golang.org/x/mobile/example/basic
+Performing Push Install
+adb: error: failed to get feature set: device offline
+c/Users/<user>/go/bin/gomobile.exe: exit status 4294967295
+```
+
+If this happened, unplug your device and run the following command:
+
+```bash
+$ adb kill-server
+```
+
+Plug the device again and run:
+
+```bash
+$ adb devices
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+List of devices attached
+
+$ adb devices
+List of devices attached
+4200c908036765dd        device
+```
+
+And finally, try `gomobile install` again:
+
+```bash
+$ gomobile install golang.org/x/mobile/example/basic
+Performing Streamed Install
+Success
+```
+
+If you get the success message as above, check your device's list of apps and you will see a new Android icon with the name `Basic`.
+
+Success! You have compiled and installed an Android app written in Go!
