@@ -19,8 +19,6 @@ $ go get golang.org/x/mobile/cmd/gobind
 $ go get golang.org/x/mobile/cmd/gomobile
 ```
 
->NOTE: In order to get `gomobile` to work on my machine I had to turn Go modules off by setting this environment variable: GO111MODULE=off
-
 ## Installing the Android NDK
 
 To install the Android Native Development Kit (NDK), follow these steps:
