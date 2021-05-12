@@ -18,9 +18,8 @@ Where:
 ### Getting into a container
 
 ```bash
-$ docker exec -it <container-name> <image>
+$ docker exec -it <container-name> command (e.g. /bin/bash)
 ```
-
 Where:
 
 * -it: stands for `interacting`, which means that you will be in the containers terminal.
@@ -35,6 +34,12 @@ $ docker ps -a
 
 ```bash
 $ docker ps
+```
+
+### Removing all containers
+
+```bash
+$ docker container rm $(docker container ls -aq)
 ```
 
 ## Images
