@@ -56,8 +56,22 @@ OR
 $ docker images
 ```
 
+### Building a Docker Image without Cache
+
+```bash
+$ docker build --no-cache -t <image-name-tab> .
+```
+
 ### Deleting Docker Images
 
 ```base
 $ docker image rm <id>
+```
+
+## System
+
+### Completely clear all cache
+
+```bash
+$ docker system prune
 ```
