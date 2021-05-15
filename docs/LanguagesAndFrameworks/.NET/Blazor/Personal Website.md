@@ -138,7 +138,9 @@ $ gcloud compute forwarding-rules create https-fwd-rule-rob \
 Created [https://www.googleapis.com/compute/v1/projects/singular-glow-313017/global/forwardingRules/https-fwd-rule-rob].
 ```
 
+## Using Access Token to Authenticate Docker to GCP in GitHub
 
+[Docs](https://cloud.google.com/artifact-registry/docs/docker/authentication#token)
 
 ## Issues
 
