@@ -169,3 +169,21 @@ I've added a comment to this [Stack Overflow answer](https://stackoverflow.com/a
 #### The Solution
 
 Deleting and recreating the isolated CSS files with the same content actually did the trick. Please, refer to the link above.
+
+### Deploying to Cloud Run using a Service Account
+
+#### The problem
+
+```bash
+ERROR: (gcloud.run.deploy) PERMISSION_DENIED: Permission 'iam.serviceaccounts.actAs' denied on service account *** (or it may not exist).
+```
+
+#### The Cause
+
+In order to deploy a function, a user who has been assigned the Project Viewer, the Cloud Function Developer, or Cloud Function Admin role must be assigned an additional role.
+
+#### The Solution
+
+[GCP Docs](https://cloud.google.com/functions/docs/troubleshooting#role-actAs)
+
+Assign the user an additional role, the Service Account User IAM role (roles/iam.serviceAccountUser), scoped to the Cloud Functions runtime service account.
