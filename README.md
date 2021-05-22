@@ -1,6 +1,8 @@
 <h1>Always Learning</h1>
 
-In this repo I try satiate my thirst for computer science and software engineering knowledge and my curiosity of different software development technologies, techniques, patterns and best practices.
+In this repo I try satiate my thirst for computer science and software engineering
+knowledge and my curiosity of different software development technologies,
+techniques, patterns and best practices.
 
 <p align="center">
   <img width=330 height=400 src="assets/images/gandalf.jpg">
@@ -37,6 +39,7 @@ In this repo I try satiate my thirst for computer science and software engineeri
 [IoT](docs/IoT/README.md)
 
 ## Programming Languages and Frameworks
+
 [.NET](docs/LanguagesAndFrameworks/.NET/README.md)
 
 [Go](docs/LanguagesAndFrameworks/Go/README.md)
@@ -54,9 +57,11 @@ In this repo I try satiate my thirst for computer science and software engineeri
 [Math](docs/Math/README.md)
 
 ## Physics
+
 ## Modern Authentication
+
 ## Paradigms
+
 ## Software Architecture
+
 ## Quantum Computing
-
-
