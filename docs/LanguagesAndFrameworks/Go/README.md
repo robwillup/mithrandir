@@ -2,7 +2,9 @@
 
 In this section we study the Go programming language!
 
-![Gopher](https://cdn-course-logos.exlskills.com/golang-gopher-typing.gif)
+<div align="center">
+<img src="https://cdn-course-logos.exlskills.com/golang-gopher-typing.gif" style="width:50%;"/>
+</div>
 
 ## Overview
 
@@ -26,3 +28,5 @@ Go
 * is fast
 * statically typed
 * compiled
+
+## [The Go Programming Language - Book Study](./The%20Go%20Programming%20Language%20Book/README.md)
