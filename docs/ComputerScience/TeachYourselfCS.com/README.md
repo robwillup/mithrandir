@@ -195,3 +195,163 @@ lectures are [on the Internet Archive](https://archive.org/details/ucberkeley-we
 -- *Mike Acton, Engine Director at Insomniac Games*
 
 ([watch his CppCon talk](https://www.youtube.com/watch?v=rX0ItVEVjHc))
+
+### Algorithms and Data Structures - Guide
+
+We agree with decades of common wisdom that familiarity with
+common algorithms and data structures is one of the most
+empowering aspects of a computer science education.
+This is also a great place to train one's general problem-solving abilities,
+which will pay off in every other area of study.
+
+There are hundreds of books available, but our favorite is
+[The Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/?pldnSite=1)
+by Steven Skiena. He clearly lovels algorithmic problem
+solving and typically succeeds in fostering similar enthusiasm among his students
+and readers.
+
+For those who prefer video lectures, [Skiena generously provides his online](https://www3.cs.stonybrook.edu/~skiena/373/videos/).
+We also really like Tim Roughgarden's course, available
+[on Coursera](https://www.coursera.org/specializations/algorithms) and [elsewhere](http://timroughgarden.org/videos.html).
+
+For practice, our preferred approach is for students to solve problems on [Leetcode](https://leetcode.com/).
+These tend to be interesting problems with decent accompanying
+solutions and discussions. They also help you test progress
+against questions that are commonly used in technical interviews
+at the more competitive software companies. We suggest solving
+around 100 random leetcode problems as part of your studies.
+
+Finally, we strongly recommend *[How to Solve It](https://www.amazon.com/How-Solve-Mathematical-Princeton-Science/dp/069116407X/?pldnSite=1)*
+as an excellent and unique guide to general problem solving;
+it's as applicable to computer science as it is to mathematics.
+
+> I have only one method that I recommend extensively-
+> it's called think before you write.
+-- *Richard Hamming*
+
+### Mathematics for Computer Science - Guide
+
+In some ways, computer science is an overgrown branch of applied mathematics.
+While many software engineers try-and to varying degrees succeed-
+at ignoring this, we encourage you to embrace it with direct study.
+Doing so successfully will give you an enormous competitive
+advantage over those who don't.
+
+The most relevant area of math for CS is broadly called "discrete mathematics",
+where "discrete" is the opposite of "continuous" and is
+loosely a collection of interesting applied math topics
+outside of calculus. Given the vague definition, it's
+not meaningful to try to cover the entire breadth of
+"discrete mathematics". A more realistic goal is to build
+a working understanding of logic, combinatorics and probability,
+set theory, graph theory, and a little of the number theory
+informing cryptography. Linear algebra is an additional
+worthwhile area of study, given its importance in computer
+graphics and machine learning.
+
+Our suggested starting point for discrete mathematics is the set
+of [lecture notes by László Lovász](http://www.cs.elte.hu/~lovasz/dmbook.ps).
+Profesor Lovász did a good job of making the content approachable
+and intuitive, so this servers as a better starting point
+than more formal texts.
+
+For a more advanced treatment, we suggest [Mathematics for Computer Science](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/).
+That course's video lectures are also [freely available](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/),
+and are our recommended video lectures for discrete math.
+
+> If people do not believe that mathematics is simple,
+> it is only because they do not realize how complicated life is.
+-- *John von Neumann*
+
+### Operating Systems - Guide
+
+[Operating Systems Concepts](https://www.amazon.com/dp/1118063333/)
+(the "Dinosaur book") and [Modern Operating Systems](https://www.amazon.com/dp/013359162X/)
+are the "classic" books on operating systems. Both have attracted criticism for their
+lack of clarity and general student unfriendliness.
+
+*Operating Systems: Three Easy Pieces* is a good alternative
+that's [freely available online](https://pages.cs.wisc.edu/~remzi/OSTEP/).
+We particularly like the structure and readability of the book, and feel that
+the exercises are worthwhile.
+
+After OSTEP, we encourage you to explore the design decisions
+of specific operating systems, through "{OS name} Internals"
+style books such as
+[Lion's commentary on Unix](https://www.amazon.com/Lions-Commentary-Unix-John/dp/1573980137/)
+[The Design and Implementation of the FreeBSD Operating System](https://www.amazon.com/Design-Implementation-FreeBSD-Operating-System/dp/0321968972/)
+and [Mac OS X Internals](https://www.amazon.com/Mac-OS-Internals-Systems-Approach/dp/0321278542/).
+For Linux, we suggest Robert Love's fantastic
+[Linux Kernel Development](https://www.amazon.com/Linux-Kernel-Development-Robert-Love/dp/0672329468).
+
+A great way to consolidate your understanding of operating
+system is to read the code of a small kernel and add features.
+One choice is [xv6](https://pdos.csail.mit.edu/6.828/2016/xv6.html)
+, a port of Unix V6 to ANSI C and x86, maintained for a courses at MIT.
+OSTEP has an appendix of potential [xv6 labs](https://pages.cs.wisc.edu/~remzi/OSTEP/lab-projects-xv6.pdf)
+full of great ideas for potential projects.
+
+### Computer Networking - Guide
+
+Given that so much of software engineering is on web servers and clients,
+one of the most immediately valuable areas of computer science
+is computer networking.
+Our self-taught students who methodically study networking find that they finally
+understand terms, concepts and protocols they'd been surrounded
+by for years.
+
+Our favorite book on the topic is
+[Computer Networking: A Top-Down Approach](https://www.amazon.com/Computer-Networking-Top-Down-Approach-7th/dp/0133594149/?pldnSite=1).
+The small projects and exercises in the book are well worth doing,
+and we particularly like the "Wireshark labs",
+which they have [generously provided online](https://gaia.cs.umass.edu/kurose_ross/wireshark.htm).
+
+For those who prefer video lectures, we suggest Stanford's
+[Introduction to Computer Networking course](https://www.youtube.com/playlist?list=PLvFG2xYBrYAQCyz4Wx3NPoYJOFjvU7g2Z)
+previously available via Stanford's MOOC platform Lagunita,
+but sadly now only available as unofficial playlists on Youtube.
+
+> You can't gaze in the crystal ball and see the future.
+> What the Internet is going to be in the future i what
+> society makes it.
+-- *Bob Kahn*
+
+### Databases - Guide
+
+It takes more work to self-learn about database systems than
+it does with most other topics.
+It's a relatively new (i.e. post 1970s) field of study with
+strong commercial incentives for ideas to stay behind closed doors.
+Additionally, many potentially excellent textbook authors
+have preferred to join or start companies instead.
+
+Given the circumstances, we encourage self-learners to generally
+avoid textbooks and start with [recordings of CS 186](https://www.youtube.com/user/CS186Berkeley/videos),
+Joe Hellerstein's database course at Berkeley, and to progress
+to reading papers after.
+
+One paper particularly worth mentioning for new students is
+"[Architecture of a Database System](https://dsf.berkeley.edu/papers/fntdb07-architecture.pdf)",
+which uniquely provides a high-level view of how relational
+database management systems (RDBMS) work.
+This will serve as a useful skeleton for further study.
+
+*Readings in Database Systems*, better known as
+[the databases "Red Book"](http://www.redbook.io/),
+is a collection of papers compiled and edited by Peter Bailis,
+Joe Hellerstein and Michael Stonebraker.
+For those who have progressed beyond the level of the CS 186 content,
+the Red Book should be your next step.
+
+If you're adamant about using an introductory textbook,
+we suggest [Database Management Systems](https://www.amazon.com/Database-Management-Systems-Raghu-Ramakrishnan/dp/0072465638/?pldnSite=1)
+by Ramakrishnan and Gehrke. For more advanced students,
+Jum Gray's classic
+[Transaction Processing: Concepts and Techniques](https://www.amazon.com/Transaction-Processing-Concepts-Techniques-Management/dp/1558601902)
+is worthwhile, but we don't encourage using this as a first resource.
+
+Finally, data modeling is a neglected and poorly taught aspect
+of working with databases. Our suggested book on the topic is
+[Data and Reality: A Timeless Perspective on Perceiving and Managing Information
+in Our Imprecise World](https://www.amazon.com/Data-Reality-Perspective-Perceiving-Information/dp/1935504215).
+
