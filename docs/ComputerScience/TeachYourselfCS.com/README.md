@@ -355,3 +355,98 @@ of working with databases. Our suggested book on the topic is
 [Data and Reality: A Timeless Perspective on Perceiving and Managing Information
 in Our Imprecise World](https://www.amazon.com/Data-Reality-Perspective-Perceiving-Information/dp/1935504215).
 
+### Languages and Compilers - Guide
+
+Most programmers learn languages, whereas most computer
+scientists learn *about* languages. This gives the computer
+scientist a distinctive advantage over the programmer,
+even in the domain of programming! Their knowledge generalizes;
+they are able to understand the operation of a new language
+more deeply and quickly than those who have merely learned
+specific languages.
+
+Our suggested introductory text is the excellent [Crafting Interpreters](https://craftinginterpreters.com/contents.html)
+by Bob Nystrom, available for free online. It's well organized,
+highly entertaining, and well suited to those whose primary goal
+is simply to better understand their languages and language
+tools. We suggest taking the time to work through the whole thing, attempting
+whichever of the "challenges" sustains your interest.
+
+A more traditional recommendation is
+[Compilers: Principles, Techniques & Tools](https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811?pldnSite=1),
+commonly called "the Dragon Book". Unfortunately, it's not
+designed for self-study, but rather for instructors to pick
+out 1-2 semesters worth of topics for their courses.
+
+If you elect to use the Dragon Book, it's almost essential
+that cherry-pick the topics, ideally with the help of a
+mentor. In fact, our suggested way to utilize the Dragon Book,
+if you so choose, is as a supplementary reference for a video
+lecture series. Our recommended one is [Alex Aiken's, on edX](https://www.edx.org/course/compilers).
+
+> Don't be a boilerplate programmer. Instead, build tools
+> for users and other programmers. Take historical note
+> of textile and steel industries: do you want to build
+> machines and tools, or do you want to operate those machines?
+-- *Ras Bodik at the start of his compilers course*
+
+### Distributed Systems - Guide
+
+As computers have increased in number, they have also *spread*.
+Whereas businesses would previously purchase larger and larger
+mainframes, it's typical now for even very small applications
+to run across multiple machines.
+Distributed systems is the study of how to reason about the
+trade-offs involved in doing so.
+
+Our suggested book for self-study is Martin Kelppmann's
+[Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable-ebook/dp/B06XPJML5D/?pldnSite=1).
+Far better than a traditional textbook, DDIA is a highly
+readable book designed for practitioners, which somehow
+avoids sacrificing depth or rigor.
+
+For those seeking a more traditional text, or who would
+prefer one that's available for free online, we suggest
+Maarten van Steen and Andrew Tanenbaum's
+[Distributed Systems, 3rd Editions](https://www.distributed-systems.net/index.php/books/ds3/).
+
+For those who prefer video, an excellent course with videos
+available online is [MIT's 6.824](https://www.youtube.com/watch?v=cQP8WApzIQQ&list=PLrw6a1wE39_tb2fErI4-WkMbsvGQk9_UB),
+a graduate course taught by Robert Morris with readings
+available [here](https://pdos.csail.mit.edu/6.824/schedule.html).
+
+No matter the choice of textbook or other secondary resources,
+study of distributed systems absolutely mandates reading papers.
+A good list is [here](http://dsrg.pdos.csail.mit.edu/papers/),
+and we would highly encourage attending your local
+[Papers We Love](https://paperswelove.org/) chapter.
+
+## Other Topics - AI/graphics/pet-topic-X?
+
+We've tried to limit our list to computer science topics that
+we feel *every practicing software engineer* should know,
+irrespective of specialty or industry, but with a focus on systems.
+In our experience, thse will be the highest ROI topics for the
+overwhelming majority of self-taught engineers and bootcamp grads,
+and provide a solid foundation for further study.
+Subsequently, you'll be in a much better position to pick up
+textbooks or papers and learn the core concepts without much guidance.
+Here are our suggested starting points for a couple of common "electives":
+
+* For artificial intelligence: do
+[Berkeley's intro to AI course](http://ai.berkeley.edu/home.html) by watching the
+videos and completing the excellent Pacman projects.
+As a textbook, use Russell and Norvig's
+*Artificial Intelligence: a Modern Approach*.
+* For machine learning: do Andrew Ng's Coursera course.
+Be patient, and make sure you understand the fundamentals
+before racing off to shiny new topics like deep learning.
+* For computer graphics: work through
+[Berkeley's CS 184](https://inst.eecs.berkeley.edu//~cs184/fa12/onlinelectures.html)
+material, and use
+[Computer Graphics: Principles and Practice](https://www.amazon.com/Computer-Graphics-Principles-Practice-3rd/dp/0321399528)
+as a textbook.
+
+## Don't Give Up
+
+We're very confident that you could teach yourself everything above.
