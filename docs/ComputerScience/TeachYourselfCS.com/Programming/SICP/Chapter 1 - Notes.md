@@ -38,3 +38,89 @@ the same way as primitive procedures.
 * primitive: (+ 5 7)
 * compound: (sum 5 7)
 
+## 1.1.5 The Subtitution Model for Procedure Application
+
+For compound procedures, the application process is as follows:
+
+* To apply a compound procedure to arguments, evaluate the body
+of the procedure with each formal parameter replaced by the
+corresponding argument.
+
+The *substitution model* for procedure application is a model
+that determines the "meaning" of procedure application.
+
+Example of *substitution model*:
+
+```scheme
+(+ (square 6) (square 10))
+```
+
+If we use the definition of square, this reduces to
+
+```scheme
+(+ (* 6 6) (* 10 10))
+```
+
+which reduces by multiplication to
+
+```scheme
+(+ 36 100)
+```
+
+and finally to
+
+136
+
+* The purpose of the substitution is to help us think about
+procedure application, not to provide a description of how
+the interpreter works.
+
+* The substitution model is a way to get started with thinking
+formally about the evaluation process.
+In general, when modeling phenomena is science and engineering,
+we begin with simplified, incomplete models. As we examine
+things in greater detail, these simplified models become
+inadequate and must be replace by more refined models.
+
+## 1.1.6 Conditional Expressions and Predicates
+
+```scheme
+(define (abs x)
+  (cond ((> x 0) x)
+        ((= x 0) 0)
+        ((< x 0) (- x))))
+```
+
+The general form of a conditional expression consists of
+the symbol `cond` followed by parenthesized pairs of
+expressions called *clauses*. The first expression in each
+pair is a *predicate* -- that is, an expression whose value
+is interpreted as either true or false.
+
+If none of the predicates is true, the value of the `cond` is undefined.
+
+The word *predicate* is used for procedures that return true or false,
+as well as for expressions that evaluate to true or false.
+
+The special form `if` is a restricted type of conditional
+that can be used when there are precisely two cases in the
+case analysis. The general form of an `if` expression is
+
+```scheme
+(if <predicate> <consequent> <alternative>)
+```
+
+In addition to primitive predicates such as <, =, and >, there
+are logical composition operations, which enable us to
+construct compound predicates. The three most frequently used are these:
+
+* (and <e1> .. <en>)
+
+* (or <e1> .. <en>)
+
+* (not <e>)
+
+Notice that `and` and `or` are special forms, not procedures,
+because the subexpressions are not necessarily all evaluated.
+`Not` is an ordinary procedure.
+
