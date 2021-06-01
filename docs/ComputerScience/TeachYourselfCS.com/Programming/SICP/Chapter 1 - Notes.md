@@ -124,3 +124,35 @@ Notice that `and` and `or` are special forms, not procedures,
 because the subexpressions are not necessarily all evaluated.
 `Not` is an ordinary procedure.
 
+## 1.1.7 Example: Square Roots by Newton's Method
+
+Procedures, as introduced above, are much like mathematical
+functions. They specify a value that is determined by one
+or more parameters. But there is an important difference
+between mathematical functions and computer procedures:
+Procedures must be effective.
+
+As a case in point, consider the problem of computing
+square root.
+
+√r = the y such that y >= 0 and y<sup>2</sup> = r
+
+This describes a perfectly legitimate mathematical function.
+We could use to recognize whether one number is the
+square root of another; or to derive facts about
+square roots in general. On the other hand, the definition
+does not describe a procedure. Indeed, it tells us almost
+nothing about how to actually find the the square root of
+a given number.
+
+The contrast between function and procedure is a reflection
+of the general distinction between describing properties
+of things and describing how to do things, or, as it is
+sometimes referred to, the distinction between declarative
+knowledge and imperative knowledge. In mathematics we are
+usually concerned with declarative (what is) descriptions,
+whereas in computer science we are usually concerned with
+imperative (how to) descriptions.
+
+How does one computer square roots? The most common way
+is to use Net
