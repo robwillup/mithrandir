@@ -1,4 +1,4 @@
-# Computer Science Self-study
+# Computer Science Self-Teaching
 
 This study is based on the website <https://teachyourselfcs.com>
 
