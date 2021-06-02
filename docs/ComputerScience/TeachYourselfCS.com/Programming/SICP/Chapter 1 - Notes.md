@@ -155,4 +155,93 @@ whereas in computer science we are usually concerned with
 imperative (how to) descriptions.
 
 How does one computer square roots? The most common way
-is to use Net
+is to use Newton's method of successive approximations,
+which says that whenever we have a guess *y* for the value
+of the square root of a number *x*, we can perform a simple
+manipulation to get a better guess (one closer to the actual
+square root) by averaging *y* with *x/y*. For example, we
+can compute the square root of 2 as follows. Suppose our
+initial guess is 1:
+
+|Guess|Quotient|Average|
+|:---:|:------:|:-----:|
+|1|(2/1) = 2| ((2 + 1)/2) = 1.5|
+|1.5|(2/1.5) = 1.3333| ((1.3333 + 1.5)/2)=1.4167|
+|1.4167|(2/1.4167)= 1.4118|((1.4167 + 1.4118)/2) = 1.4142|
+|...|...|...|
+
+Continuing this process, we obtain better and better
+approximations to the square root.
+
+Now let's formalize the process in terms of procedures. We start
+with a value for the radicand (the number whose values we are
+trying to computer) and a value for the guess. If the guess
+is good enough for our purposes, we are done; if not, we
+must repeat the process with an improved guess. We write this
+basic strategy as a procedure:
+
+```scheme
+(define (sqrt-iter guess x)
+  (if (good-enough? guess x)
+      guess
+      (sqrt-iter (improve guess x)
+                 x)))
+```
+
+A guess is improved by averaging it with the quotient of
+the radicand and the old guess:
+
+```scheme
+(define (improve guess x)(average guess (/ x guess)))
+```
+
+where
+
+```scheme
+(define (average x y)(/ (+ x y) 2))
+```
+
+We also have to say what we mean by "good enough". The
+following will do for illustration, but it i not really a
+very good test. The idea is to improve the answer until it
+is close enough so that its square differs from the
+radicand by less than a predetermined tolerance (here 0.001):
+
+```scheme
+(define (good-enough? guess x)
+  (< (abs (- (square guess) x)) 0.001))
+```
+
+Finally, we need a way to get started. For instance, we can
+always guess that the square root of any number is 1:
+
+```scheme
+(define (sqrt x)
+  (sqrt-iter 1.0 x))
+```
+
+If we type these definitions to the interpreter, we can use
+`sqrt` just as we can use any procedure:
+
+```scheme
+(sqrt 9)
+3.00009155413138
+(sqrt (+ 100 37))
+11.704699917758145
+(sqrt (+ (sqrt 2) (sqrt 3)))
+1.7739279023207892
+```
+
+`Sqrt-iter` demonstrates how iteration can be accomplished
+using no special construct other than the ordinary ability
+to call a procedure. (recursion)
+
+## Exercise 1.6
+
+Scheme uses applicative-order evaluation, so all procedures
+have their arguments evaluated first. If an argument is a
+recursion, an infinite loop will occur, because it will
+keep expanding the recursive procedure.
+
+The ordinary `if` need not evaluate its arguments first.
+This is the different with the ordinary `if` and an `if` defined as a function.

@@ -26,6 +26,8 @@ Best book: *Structure and Interpretation of Computer Programs*
 
 Best video lectures: Brian Harvey's Berkeley CS 61A
 
+Study notes [here](./Programming/SICP/README.MD)
+
 ## Computer Architecture
 
 If you don't have a solid mental model of how a computer actually works,
