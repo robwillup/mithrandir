@@ -185,7 +185,7 @@ In particular, two very important concepts in modern computer architecture are
 pipelining and memory hierarchy, but both are mostly absent from the text.
 
 Once you feel comfortable with the content of Nand2Tetris, we suggest either
-returning to CS:APP, or considering Patterson and Hennessy's 
+returning to CS:APP, or considering Patterson and Hennessy's
 [Computer Organization and Design](https://www.amazon.com/Computer-Organization-Design-Fifth-Architecture/dp/0124077269?pldnSite=1),
 and excellent and now classic text. Not every section in the book is essential,
 we suggest following Berkeley's [CS61C course](https://inst.eecs.berkeley.edu//~cs61c/sp15/)
