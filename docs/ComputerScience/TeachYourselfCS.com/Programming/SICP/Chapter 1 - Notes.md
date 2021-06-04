@@ -245,3 +245,104 @@ keep expanding the recursive procedure.
 
 The ordinary `if` need not evaluate its arguments first.
 This is the different with the ordinary `if` and an `if` defined as a function.
+
+## Exercise 1.7
+
+The `good-enough?` test used in computing square roots will
+not be very effective for finding the square roots of very
+small numbers. Also, in real computers, arithmetic operations
+are almost always performed with limited precision. This
+makes our test inadequate for very large numbers. Explain
+these statements, with examples showing how the test fails
+for small and large numbers.
+
+An alternative strategy for implementing `good-enough?` is to
+watch how `guess` changes from one iteration to the next and
+to stop when the change is a very small fraction of the guess.
+Design a square-root procedure that uses this kind of end test.
+Does this work better for small and large numbers?
+
+**Answer**:
+
+This version is not very effective for finding the square
+root of very small numbers because we are using a fixed
+predetermined tolerance. For very small numbers, the
+difference between the subtraction for the square of the
+guess and the radicand is immediately less than that
+predetermined tolerance.
+
+One example, is the square-root of 0.0005. If my guess is
+0.0002, my guess squared 0.00000004 minus the radicand,
+0.00049996 is already smaller than the tolerance 0.001,
+therefore the procedure will not keep trying to approximate.
+
+And for very large numbers this procedure is inadequate
+because the decimal precision is *unlimited*, which is unnecessary.
+
+The example for this is the result for square-root for the
+number 1,001,001,001 which is 31638.59985840107, the large
+number of digits after the decimal point is too much.
+
+This solution uses a variable fraction of guess:
+
+```scheme
+(define (square x) (* x x))
+
+(define (average x y)
+  (/ (+ x y) 2))
+
+(define (improve guess x)
+  (average guess (/ x guess)))
+
+(define (good-enough? guess x)
+  (< (abs (- (square guess) x)) (/ guess 100000)))
+
+(define (sqrt-iter guess x)
+  (if (good-enough? guess x)
+      guess
+      (sqrt-iter (improve guess x) x)))
+
+(define (sqrt x)
+  (sqrt-iter 1.0 x))
+  
+(sqrt 1001001001)
+```
+
+## Exercise 1.8
+
+Newton's method for cube root is based on the fact that if *y*
+i an approximation to the cube root for *x*, then a better
+approximation is given by the value:
+
+(r/y<sup>2</sup> + 2y) / 3
+
+Use this formula to implement a cube-root procedure analogous
+to the square-root procedure.
+
+**Solution:**
+
+```sh
+(define (square x)(* x x))
+
+(define (cube x)(* x x x))
+
+(define (twoxguess guess)(* guess 2))
+
+(define (div-r-by-sq-guess guess x)(/ x (square guess)))
+
+(define (improve guess x)
+  (/ (+ (div-r-by-sq-guess guess x) (twoxguess guess)) 3))
+
+(define (good-enough? guess x)
+  (< (abs (- (cube guess) x)) (/ guess 100000)))
+
+(define (sqrt-iter guess x)
+  (if (good-enough? guess x)
+      guess
+      (sqrt-iter (improve guess x) x)))
+
+(define (cbrt x)
+  (sqrt-iter 1.0 x))
+  
+(cbrt 8)
+```
