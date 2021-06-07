@@ -27,7 +27,7 @@ the following concepts:
 ## Exam Information
 
 |||
-|:-:|:-:|
+|:-|:-|
 |Exam name| CLE - C Certified Entry-Level Programmer|
 |Exam code| CLE-10-01|
 |Associated certifications|CLA - C Programming Language Certified Associate Programmer,
@@ -41,9 +41,9 @@ CLP - C Certified Professional Programmer|
 |Full exam price| USD 59|
 |Languages| English|
 |Courses aligned| 1. CLA - Programming Essentials in CC (Cisco Networking Academy,
-instructor-led: Modules 0, 1, 2, 3, 4, and 5)
-2. C Essentials - Part 1 (Basics) (OpenEDG Education Platform, self-enroll/self-study)|
-|Exam delivery channel|OpenEDG testing Service| 
+instructor-led: Modules 0, 1, 2, 3, 4, and 5) 2. C Essentials - Part 1 (Basics)
+(OpenEDG Education Platform, self-enroll/self-study)
+|Exam delivery channel|OpenEDG testing Service|
 
 ## Exam Syllabus
 
