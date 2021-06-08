@@ -128,7 +128,7 @@ This feature of high-level programming languages is called
 
 ## Compilation
 
-The translation we are referring to is make by a specialized
+The translation we are referring to is made by a specialized
 computer program called a **compiler**. The process of
 translating from a high-level language into machine language is called **compilation**.
 
@@ -140,7 +140,7 @@ called the **source file**.
 
 To write the source code you need a text editor that allows
 you to manipulate text without any formatting information.
-This code is placed in file and the name of the file should
+This code is placed in a file and the name of the file should
 give you some clue as to its content. For example, it's
 common for a file containing the source code in the "C"
 language to have its name ending with the suffix "**.c**".
@@ -160,13 +160,13 @@ you of your error.
 However, if you typed a "-" instead of a "+", the compiler
 will no longer be able to guess that your intention was to
 add two numbers, rather than to subtract them. **Do not
-expect the compiler to thing for you**. But there's no
+expect the compiler to think for you**. But there's no
 reason to be sad about it - thanks to that, developers are
 still needed.
 
 If the compiler doesn't notice any mistakes in your source,
 the result of its work will be a file containing your
-program translated translated into machine language. That
+program translated into machine language. That
 file is commonly called an **executable file**. The name of
 the file depends on the compiler you use and the OS you're
 working with. For example, most compilers designed for the
@@ -174,3 +174,26 @@ Unix/Linux system create an output file named "a.out" by
 default. Compilers designed for use in Windows can give
 this file the same name as the source file, only changing
 the suffix from ".c" to ".exe".
+
+We must admit that the whole process is actually a bit more
+complicated. Your source code might be comprehensive and
+divided among several or even dozen of source files. It may
+also happen that the program was not written by you alone,
+but by a team, in which case the division of sources into
+multiple files is simply a must. In such cases, the compiling
+splits into two phases - a **compilation** of your source, in
+order to translate it into machine language, and a joining
+(or gluing) of your executable code with the executable code
+derived from other developers into a single and unified
+product. The phase of "gluing" the different executables
+codes is commonly known as **linking** while the program
+which conducts the process is called a **linker**.
+
+## A few words about C
+
+The "C" language is one of a huge number of programming
+languages currently in use, and one of the oldest. It was
+created in the early seventies by Dennis Ritchie while he was
+working in Bell Laboratories. Some say that "C" was a
+by-product of a project which led to the very first version
+of the Unix operating system.
