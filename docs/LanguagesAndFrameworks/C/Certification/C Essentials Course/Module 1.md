@@ -196,4 +196,198 @@ languages currently in use, and one of the oldest. It was
 created in the early seventies by Dennis Ritchie while he was
 working in Bell Laboratories. Some say that "C" was a
 by-product of a project which led to the very first version
-of the Unix operating system.
+of the Unix operating system. There are many other
+programming languages widely used - some of them could be
+regarded as "C" descendants. They even inherited a name from
+their ancestor - like "C++" or "C#". Others borrowed some
+features from the original "C" and added lots of new ones -
+like Perl, Java or JavaScript.
+
+What is the most common use of "C"? It is the so-called
+**general-purpose programming language**, i.e., suitable for
+almost any programming project and at the same time not
+particularly predestined to any specific, narrow class of
+applications. It's best if used for coding drivers, embedded
+applications or operating systems (for example, the Linux
+kernel is mainly coded in "C"). You can also use it for
+building complex utilities. We can assure you that knowing
+the C language is very helpful if you want to learn C++, C#
+or Java.
+
+We guarantee you that the time you spend learning the "C"
+language won't be wasted.
+
+## "The C Programming Language" book
+
+If you take the learning of the "C" language seriously, you
+certainly won't stop at reading this text. Among the hundreds
+of books written about the C language, there is one which is
+particularly recommendable. The book has been issued dozens
+of times all around the world and is available in over 20
+different (natural) languages. We recommend it without
+hesitation. Without any doubt, it is the best book on C
+programming ever written - its high quality can be proven by
+the fact that one of its authors is **Dennis Ritchie**.
+
+## Your first program in C
+
+When we get the requirements for a program and write them in
+a sort of structured and semi-formal description of each step
+of the program, that is called an **algorithm**.
+
+Consider this simple program:
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    puts("It's me, your first program.");
+    return 0;
+}
+```
+
+The character `#` at the beginning of the first line
+indicates that the content of this line is a **preprocessor
+directive**. At a high-level a preprocessor is a separate
+part of the compiler, whose task is to pre-read the text of
+the program and make some modifications to it. The changes
+the **preprocessor** introduces are controlled entirely by
+its **directives**. In the example above, we're dealing with
+the include directive. When the preprocessor encounters that
+directive, it replaces the directive with the content of the
+file whose name is listed in the directive (in our case, this
+is the file `stdio.h`). Note - the changes made by the
+preprocessor never modify the content of your source file in
+any way. Any alterations are made on a volatile copy of your
+program, which disappears immediately after the compiler
+finishes its work.
+
+When we use a name from an external library, like `puts`, the
+compiler does not know that is a valid name, until we include
+it. This preliminary information needed by the compiler is
+included in the files whose whose names usually end with ".h"
+(**header**). These files are commonly called **header files**.
+
+The **stdio.h** file (defined by the standard of the C languages)
+contains a collection of preliminary information about ready-
+made blocks which can be used by a program to write text on
+the screen or to read letters from the keyboard.
+
+Let's go a bit deeper on **blocks**. One of the most common
+types of blocks used to build C programs is **functions**. If
+you understand functions only in a purely mathematical sense,
+this still is a pretty good clue. Imagine a function as a
+**black box**, where you can insert something into it (not
+always necessary) and take something new out of it. Things
+that are put inside the box are called function **arguments**
+(or function **parameter**).
+
+The standard of the C language assumes that the `main` block
+will always be present.
+
+Every function in "C" begins with the following set of
+information:
+
+* what is the **result** of the function?
+* what is the **name** of the function?
+* how many **parameters** does the function have and what are
+their **names**?
+
+In C, each instruction, statement, must end with a semicolon.
+
+The 0 you see after the word `return` is the result of your
+function. This is how your program tells the operating system
+the following message: *I did what I had to do, nothing
+stopped me and everything is OK.* If you were to write
+
+```c
+return 1;
+```
+
+it would mean that something had gone wrong.
+
+## Numbers and how the computers see them
+
+Numbers handled bue modern computers are of two types:
+
+* integers, that is,  those which are devoid of the fractional part;
+* floating-point numbers (or simply floats), that contain
+(or are able to contain) the fractional part.
+
+This definition is not entirely accurate but good enough for
+our purposes.
+The boundary between these two types of numbers is **very strict**.
+Both of these kinds of numbers significantly differ in how
+they are **stored** in a computer's memory and in the range
+of acceptable values. Furthermore, the characteristic of a
+number which determines its kind, range and application is
+called a **type**.
+
+How does C recognize integers?
+Simply put, its a **string of digits** that make up the number.
+But there's a reservation, you must not inert any characters
+that are not digits inside the number.
+
+There are two additional conventions, unknown to the world of
+mathematics. The first one allows us to use the numbers in an
+octal representation. If an integer number is preceded by
+the 0 digit, it will be treated as an **octal value**. This
+means that the number must contain digits taken from the
+[0..7] range only.
+
+```
+0123
+```
+
+is an octal number with a decimal value equal to 83.
+
+```
+0x123
+```
+
+is a **hexadecimal number** with a decimal value equal to 291.
+
+To print an integer number, you should use:
+
+```c
+printf("%d\n", IntegerNumberOrExpression);
+```
+
+To print a floating point number, you should use:
+
+```c
+printf("%f\n", FloatNumberOrExpression);
+```
+
+## A variable is a variable
+
+What does every variable have?
+
+* a name;
+* a type;
+* a value;
+
+## Variable names
+
+* the name of the variable must be composed of **upper-case
+or lower-case Latin letters, digits and the character _;
+* the name of the variable must **begin with a letter**;
+* the **underline character is a letter** (strange but true);
+* upper- and lower-case letters are treated as **different**
+(a little differently than in the real world);
+
+Note that the same restrictions apply to **function names**.
+
+## Variable types
+
+The *type* is an attribute that uniquely defines which values
+can be stored inside the variable.
+
+The variable comes into existence as a result of a **declaration**.
+A declaration is a syntactic structure that binds a name,
+provided by the programmer, to a specific type offered by the
+C language. The declaration syntax is simple: just use the
+name of the desired type, then the variable name (or
+variable names separated by comma if there are more than one).
+The whole statement ends with a semicolon.
