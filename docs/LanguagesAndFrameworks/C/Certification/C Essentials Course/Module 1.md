@@ -336,13 +336,13 @@ the 0 digit, it will be treated as an **octal value**. This
 means that the number must contain digits taken from the
 [0..7] range only.
 
-```
+```code
 0123
 ```
 
 is an octal number with a decimal value equal to 83.
 
-```
+```code
 0x123
 ```
 
