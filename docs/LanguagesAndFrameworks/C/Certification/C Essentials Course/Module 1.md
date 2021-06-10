@@ -391,3 +391,54 @@ C language. The declaration syntax is simple: just use the
 name of the desired type, then the variable name (or
 variable names separated by comma if there are more than one).
 The whole statement ends with a semicolon.
+
+## Declaring variables
+
+```c
+int Counter;
+
+int variable1, variable2;
+```
+
+## Variable values
+
+To give a value to the newly created variables we need to use the
+**assignment operator**:
+
+```c
+Counter = 1;
+
+result = 100 + 200;
+
+x = x + 1;
+```
+
+## Reserved Keywords
+
+| | | |
+|:-|:-|:-|
+|auto|extern|short|
+|break|float|signed|
+|case|for|sizeof|
+|char|goto|static|
+|complex|if|struct|
+|const|imaginary|switch|
+|continue|inline|typedef|
+|default|int|union|
+|do|long|unsigned|
+|double|register|void|
+|else|restrict|volatile|
+|enum|return|while|
+
+## Comments
+
+Comments are addressed to humans, not to the compiler. To explain to other
+readers how the code work.
+
+To be precise, we should say that each comment is lexically equivalent to **one space**.
+
+```c
+/*
+this is a comment+
+*/
+```
