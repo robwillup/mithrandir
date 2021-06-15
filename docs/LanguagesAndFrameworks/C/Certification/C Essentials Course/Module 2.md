@@ -102,3 +102,81 @@ penalty for violating this rule will come to you at different moments.
 If you date to write something like that, a judgement will be issued by the
 compiler - you may get a **compilation error** and you won't be able to run your
 program.
+
+### Addition
+
+The **addition** operator is the `+` (plus) sign, which is one that we already
+know from mathematics.
+
+### Subtraction
+
+The **subtraction** operator is obviously the `-` (minus) sign. This operator also
+has another meaning, it can change the sign of a number.
+
+This is a great opportunity to show you a very important distinction between
+**unary** and **binary** operators
+
+#### Unary minus
+
+In "subtracting" applications, the minus operator expects two arguments:
+the left (a **minuend** in arithmetic terms) and the right (a **subtrahend**).
+For this reason, the subtraction operator is considered one of the binary operators,
+just like the addition, multiplication and division operators.
+But the minus operator may also be used in a different way:
+
+```c
+int i, j;
+
+i = -100;
+j = -1;
+
+// j = 100
+```
+
+#### Unary plus
+
+Unary plus, which could be used to preserve the sign, is syntactically correct,
+but using it doesn't make much sense.
+
+### Remainder
+
+The **remainder** operator (or **modulus** as it is often called) is quite a
+peculiar operator, because it has no equivalent among traditional arithmetic operators.
+Its graphical representation in the C language is the following character: `%` (percent),
+which may look a bit confusing. It's a binary operator and both arguments cannot
+be floats (don't forget this!).
+
+```c
+int i, j, k;
+
+i = 13;
+j = 5;
+
+k = i % j;
+```
+
+The `k` variable is set to the value of `3`, because 2*5+3=13.
+
+### Prefix and Postfix Operators
+
+Hand-written notes.
+
+### Shortcut operators
+
+```c
+i = i * 2;
+```
+
+In the C language, there's a shortened way to write this operation:
+
+```c
+i *= 2;
+```
+
+|||
+|:-:|:-:|
+|i = i + 2 * j;| i += 2 * j; |
+| Var = Var / 2; | Var /= 2; |
+| Rem = Rem % 10; | Rem %= 10; |
+| j = j - (i + Var + Rem);|j -= (i + Var + Rem);|
+
