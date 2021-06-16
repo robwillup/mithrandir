@@ -180,3 +180,128 @@ i *= 2;
 | Rem = Rem % 10; | Rem %= 10; |
 | j = j - (i + Var + Rem);|j -= (i + Var + Rem);|
 
+## The *char* Type
+
+To store and manipulate characters, the C language provides a special
+type of data. This type is called a **char**.
+
+```c
+char Character;
+```
+
+### ASCII code
+
+Computers stores characters as numbers. Every character used by a computer
+corresponds to a number, and vice versa. This system of assignments includes more
+characters than you would probably expect. Many of them are invisible to humans
+but essential for computers.
+
+Some of these characters are called **white spaces**, while others are named
+**control characters**, because their purpose is to control the input/output devices.
+
+Out of the need to introduce a universal and widely accepted standard implemented
+by (almost) all computers and operating systems all over the world, **ASCII**
+(which is a short for *American Standard Code for Information Interchange*)
+was created and it is the most widely used system in the world, and it's safe to
+assume that nearly all modern devices (like computers, printers,
+mobile phones, tablets, etc.) use this code.
+
+The code provides space for 256 different characters.
+
+### Literal
+
+The literal is a symbol which **uniquely identifies its value**.
+Some prefer to use a different definition: the **literal means itself**.
+
+* `Character` - this is not a literal; you cannot guess what value is currently assigned
+* `'A'` - this is a literal; you can immediately guess its value.
+* `100` - this is a literal too, of the `int` type.
+
+### Character Literals
+
+The `\` character (called *backslash*) acts as an **escape character**,
+because by using the `\` we can escape from the normal meaning of the character
+that follows the slash.
+
+### Escape characters
+
+The C language allows us to escape in other circumstances too. Let's start with
+those that denote literals representing white spaces.
+
+`\n` - denotes a **transition to a new line** and is sometimes called an
+**LF (Line Feed)**, as printers react to this character by pulling out the paper
+by one line of text.
+
+`\r` - denotes the **return to the beginning of the line** and is sometimes called
+a **CR (Carriage Return** - "carriage" was the synonym of a "print head" in the
+typewriter era); printers respond to this character as if they are told to re-start
+printing from the left margin of the already printed line.
+
+`\a` (as in **alarm**) is a relic of the past when teletypes were often
+used to communicate with computers; sending this character to a teletype turn on
+its ringer; hence the character is officially called **BEL** (as in bell);
+
+`\0` - called **nul** (from the Latin word **nullus** - none) is a
+character that **does not represent any character**; despite first impressions
+it could be very useful.
+
+### Char values are int values
+
+There's an assumption in the C language that may seem surprising at first glance:
+the `char` type is treated as a special kind of `int` type. This means that:
+
+* You can always assign a `char` value to an `int` variable;
+* You can always assign an `int` value to a `char` variable, but if the
+value exceeds 255 (the top-most character code in ASCII), you may expect a loss
+of value;
+* The value of the `char` type can be subject to the same operators as the data
+of type `int`.
+
+## Logical operators
+
+**is equal to?**
+
+```c
+1 == 0; // false
+```
+
+**is not equal to?**
+
+```c
+1 != 0; // true
+```
+
+**is greater than?**
+
+```c
+1 > 0; // true
+```
+
+**is greater than or equal to?**
+
+```c
+1 >= 0; // true
+```
+
+**is less than or equal to?**
+
+```c
+1 < 0; // false
+
+1 <= 0; // false
+```
+
+### How to use the answers we get?
+
+There are at least two possibilities:
+First, we can store it in a variable and make use of it later.
+
+```c
+int answer, value1, value2;
+answer = value1 >= value2;
+```
+
+If the answer is true, the computer will assign `1` to `answer`. Otherwise,
+the variable `answer` will be assigned `0`.
+
+The second way is by using `if`.
