@@ -305,3 +305,75 @@ If the answer is true, the computer will assign `1` to `answer`. Otherwise,
 the variable `answer` will be assigned `0`.
 
 The second way is by using `if`.
+
+## Input and output
+
+Sending data from the human to the computer is called **input**, and from the
+computer to human is called **output**.
+
+The `puts` function can write a string on a computer screen and nothing else.
+You mustn't use it if you want to print an integer or a single character.
+
+### Output
+
+To print other data types, there's a very powerful function in the C language
+named `printf` (**print formatted**). This function can easily output several values
+of different types and mix them with text.
+
+The `printf` function has several unique features:
+it doesn't specify how many arguments must be provided; the only requirement is
+that there must be at least one argument; additionally, only the first argument
+has a strict type (it must be a string); all subsequent may be of any type.
+
+The first, mandatory, argument is called the **format**. It's a recipe or a
+specification according o which the `printf` function will proceed with its
+subsequent arguments.
+
+`printf` reads the instruction carefully and learn from it which data is to
+be printed and how it should be presented to the user.
+
+```c
+printf("This is just a text");
+```
+
+In the next example, the `printf` functions is invoked with two arguments.
+The first is the format. The second is a variable of type `int`.
+If there's a percent symbol inside the format, the `printf` considers it a
+**hint on how to proceed** with the arguments following the format.
+The first hint refers to the fist argument after the format, the second to the
+second, etc. (there are some exceptions to this simple rule.)
+
+The `%` joined together with some other character(s) is sometimes called a
+**specifier**.
+
+```c
+printf("Sheep counted so far: %d", SheepCounter);
+```
+
+The letter `d` indicates that the corresponding argument should be treated as a
+value of type `int` and sent to the screen as a number.
+
+This is an abbreviated list of format specifiers:
+
+`%d` (as in **d**ecimal) specifies that the corresponding argument is a
+**value of type** `int` and should be presented as a fixed-point decimal number;
+its synonym is a `%i` specifier (as in **i**nteger).
+
+`%x` (as in he**x**adecimal) specifies that the corresponding argument is a
+value of type `int` and should be presented as a fixed-point
+**hexadecimal number**.
+
+`%o` (as in **o**ctal) specifies that the corresponding argument
+is a value of  type `int` and should be presented as a fixed-point **octal** number.
+
+`%c` (as in **c**har) specifies that the corresponding argument
+is a value of type `int` or `char` and should be presented as a **character**.
+
+`%f` (as in **f**loat) specifies that the corresponding
+argument is of type `float` and should be presented as a
+**single-precision floating-point number**.
+
+`%lf` specifies that the corresponding argument is a value of type
+`double` and should be presented as a **double-precision floating-point number.**
+
+`%%` (as in *itself*) specifies the **percent sign**.
