@@ -7,7 +7,7 @@
 > -- Wikipedia
 
 And according to SICP, Computer Science is neither
-about computers not a `science`. Computer is
+about computers nor a `science`. Computer is
 the subject of Electrical Engineering. And science
 usually involves research and discoveries.
 The study we call computer science is actually
