@@ -6,6 +6,13 @@
 > computing systems in hardware and software.
 > -- Wikipedia
 
+And according to SICP, Computer Science is neither
+about computers not a `science`. Computer is
+the subject of Electrical Engineering. And science
+usually involves research and discoveries.
+The study we call computer science is actually
+the study of means of controlling `complexity`.
+
 ## teachyourselfcs.com
 
 [teachyourselfcs.com](https://teachyourselfcs.com) is an amazingly useful compendium
