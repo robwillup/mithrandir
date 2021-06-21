@@ -377,3 +377,11 @@ argument is of type `float` and should be presented as a
 `double` and should be presented as a **double-precision floating-point number.**
 
 `%%` (as in *itself*) specifies the **percent sign**.
+
+### Input
+
+```c
+scanf("%d", &variable);
+```
+
+`%d` is the format specifier and `&` tells `scanf` where the variable is stored.

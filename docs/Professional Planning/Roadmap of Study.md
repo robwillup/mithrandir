@@ -1,9 +1,10 @@
 # Roadmap of Study
 
-IT subjects to specialize in and become an expert:
+IT subjects to study, specialize in and become an expert:
 
 ## Areas
 
+* Computer Science
 * IoT >> Embedded Software Development
 * Backend Software Development
 * Cloud computing
