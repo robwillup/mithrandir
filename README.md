@@ -2,8 +2,7 @@
 
 This repo is my notebook where I try to keep all the relevant content I've been
 learning about computer science and software engineering. This practice
-is helping me become a more skilled and knowledgeable professional and hopefully
-it will be beneficial to others as well.
+is helping me learn more and hopefully it will be beneficial to others as well.
 
 <p align="center">
   <img width=330 height=400 src="assets/images/gandalf.jpg">
