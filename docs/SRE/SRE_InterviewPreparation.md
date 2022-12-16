@@ -83,3 +83,11 @@ I love to spend time with my family, reading books (both technical and fictional
 * Any fixed time alloted for professional training? Open-source contributions? Conferences?
 * Do SRE devs run PoCs of new technologies or products?
 * Are there internal brown bags?
+
+## After the Interview
+
+These were questions they asked me that I felt I didn't do well:
+
+* If a web application lives in a Kubernetes cluster, and that application is accessed via a browser, what happens? What is the process? What is the path a request goes through?
+* If you're supporting a customer and the developers helping you ask for a data dump from the application having issues, would you get that for them? If they said that was the only thing that could help them solve the issue?
+

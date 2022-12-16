@@ -7,6 +7,7 @@ We have to store compound data into some soft of data structure.
 No data structure is perfect. They are all good and bad in different aspects.
 
 The way we measure how good a data structure is at doing different things such as
+
 * add()
 * get()
 * sort()
