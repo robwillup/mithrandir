@@ -1,16 +1,4 @@
-# Arrays and Strings
-
-Let's take a look at some of the more common techniques and issues with these data structures.
-
-## Hash Tables
-
-A hash table is a data structure that maps keys to values for highly efficient lookup. So this is
-similar to dictionaries.
-
-Hash tables benefit from fast data retrieval and are foundational to standard tools and techniques
-like caching and database indexing.
-
-### What is a hash table?
+# What is a hash table?
 
 **References:**
 
@@ -26,7 +14,7 @@ Hash tables are said to be associative, which means that for each key, data occu
 Hash tables let us implement things like phone books or dictionaries; in them we store the
 association between a value and its key.
 
-### Why use hash tables?
+## Why use hash tables?
 
 The most valuable aspect of a hash table over abstract data structures is its speed to perform
 insertion, deletion, and search operations. Hash tables can do them all in constant time O(1).
@@ -36,17 +24,17 @@ Because of this efficiency, you'll find hash tables to be pretty dang useful for
 And if you look carefully, you'll notice that they're actually implemented in a variety of places
 throughout your tools like your databases, caches, data-fetching libraries, etc.
 
-### How do hash tables work?
+## How do hash tables work?
 
 There are four distinct aspects to discuss how hash tables work:
 
-#### Storage
+### Storage
 
 A hash table is an abstract data type that relies on using a more primitive data type (such as
 an array or an object) to store the data. There are slight implementation implications depending on
 which underlying data type is used.
 
-#### Key-value pairs
+### Key-value pairs
 
 To store data as a value in a hash table, we need some way to identify it uniquely. We need a key.
 Sometimes data contains an individual property that can very naturally assume responsibility for the
@@ -68,7 +56,7 @@ a dictionary may contain two different entries for the word `chair`, the furnitu
 An option is to organize the data that we want to store in the hash table a little differently,
 for example in an object.
 
-#### Hash functions
+### Hash functions
 
 Once we have the key-value pair, we pass them to the hash table to store the data for later
 retrieval. Hash tables need a hash function to determine how the table should store the data,
@@ -92,7 +80,7 @@ definitions to the `chair` value's definition when we try to hash it.
 Alternatively, we could also configure it to throw an error if the hash function encounters a duplicate.
 In implementations where we're not merging data, this is generally referred to as a collision.
 
-#### Methods/operations (what can it do?)
+### Methods/operations (what can it do?)
 
 We know that one of the operations a hash table should perform is to hash an item - that is, to create
 the unique index based on a key. What other things should it be capable of?
@@ -105,18 +93,18 @@ At the base minimum, a hash table should be able to do the following:
 * list - get all the keys or key-value pairs
 * count - count the number of items in the table.
 
-### How to choose the key in a hash table
+## How to choose the key in a hash table
 
 To determine what should be the key in the key-value pair, it must be:
 
 * Unique
 * known by the consumers so that data can be retrieved in constant time.
 
-### Basic hash table examples
+## Basic hash table examples
 
 Most general-purpose languages have few different ways to implement a hash table.
 
-#### Object implementation
+### Object implementation
 
 Create a plain old JavaScript object:
 
@@ -149,3 +137,8 @@ table.hasOwnProperty('green'); // true
 When you're solving one-off algorithmic problems, you can use objects to get the functionality you
 need from a hash table quickly. However, there are better ways to design hash tables to be easier
 to use, and one such route is through encapsulation.
+
+## Encapsulated hash table
+
+When you have related functionality, it's generally a good idea to encapsulate it withing a cohesive
+object or a collection of functions. Here, we create a `HashTable`
