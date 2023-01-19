@@ -142,3 +142,94 @@ to use, and one such route is through encapsulation.
 
 When you have related functionality, it's generally a good idea to encapsulate it withing a cohesive
 object or a collection of functions. Here, we create a `HashTable`
+
+## Associative array JavaScript hash table example
+
+A more advanced way to create a hash table is to use arrays as the backing data structure instead of objects.
+
+We create a `HashTable` class and initialize a fixed-size array to 200 elements.
+
+```javascript
+class HashTable {
+
+	constructor() {
+		this.table = new Array(200);
+		this.size = 0;
+	}
+}
+```
+
+### Hash code
+
+Next, let's implement the `hash` method. Assuming this is a private method used by all of the other public
+methods, its job is to create a hash code from a key.
+
+A hash code is a value computed from the key which designates the index which the value should be saved at
+within the array.
+
+In this implementation, the hash function expects a `string` key and returns a numeric hash code. Looking at
+each element in the string, we add the character codes to create a hash code.
+
+```javascript
+_hash(key) {
+	let hash = 0;
+	for (let i = 0; i < key.length; i++) {
+		hash += key.charCodeAt(i);
+	}
+	return hash;
+}
+```
+
+This is my own implementation in C#:
+
+```csharp
+public class HashTable
+{
+    private HashTableItem[] Table { get; set; }
+    public int Size { get; set; }
+
+    public HashTable()
+    {
+        Table = new HashTableItem[200];
+        Size = 0;
+    }
+
+    public void Add(string key, string value)
+    {
+        int index = Hash(key);
+        Table[index] = new(key, value);
+        Size++;
+    }
+
+    public HashTableItem Get(string key)
+    {
+        int index = Hash(key);
+        return Table[index];
+    }
+
+    public void Remove(string key)
+    {
+        int index = Hash(key);
+        Table[index] = new();
+        Size--;
+    }
+
+    private int Hash(string key)
+    {
+        int hash = 0;
+
+        for (int i = 0; i < key.Length; i++)
+        {
+            hash += key[i];
+        }
+
+        return hash % Table.Length;
+    }
+}
+```
+
+Things I noticed while implementing this HashTable:
+
+* The `Hash()` function takes the key and performs an operation to create a value from it that will serve as the index to the array.
+* That index my be in any order depending on the key.
+* So the array acts as a dictionary because it's indexes are used as keys and its elements contain the values.
