@@ -111,6 +111,8 @@ are calling via interop.
 * Where possiblee the file name should be the same as the name of the main class in the file, e.g.
 `MyClass.cs` contains class `public class MyClass {}`.
 * In general, prefer one core class per file.
+* Be consistent with the project
+* Prefer a flat structure where possible (as long as simplicity does not cost organization.)
 
 ### camelCase
 
@@ -168,6 +170,108 @@ We use language keywords instead of BCL types (e.g. `int, string, float` instead
 `Int32, String, Single`, etc.) for both type references as well as method calls (e.g. `int.Parse`
 instead of `Int32.Parse`).
 
+### Constants
+
+* Variables and fields that can be made `const` should always be made `const`.
+* If `const` isn't possible, `readonly` can be a suitable alternative.
+* Prefer named constants to magic numbers.
+
+### IEnumerable vs IList vs IReadOnlyList
+
+* For inputs use the most restrictive collection type possible, for example `IReadOnlyCollection`
+/ `IReadOnlyList` / `IEnumerable` as inputs to methods when the inputs should be immutable.
+* For outputs, if passing ownership of the returned container to the owner, prefer `IList` over
+`IEnumerable`. If not transferring ownership, prefer the most restrictive option.
+
+### Generators vs containers
+
+* Use your best judgement, bearing in mind:
+  * Generator code is often less readable than filling in a container.
+  * Generator code can be more performant if the results are going to be processed lazily, e.g. when
+	not all the results are needed.
+  * Generator code that is directly turned into a container via `ToList()` will be less performant than
+    filling in a container directly.
+  * Generator code that is called multiple times will be considerably slower than iterating over a
+    container multiple times.
+
+### Property styles
+
+* For single line read-only properties, prefer expression body properties (`=>`) when possible.
+* For everything else, use the older `{ get; set; }` syntax.
+
+### Expression body syntax
+
+```csharp
+int SomeProperty => _someProperty
+```
+
+* Judiciously use expression body syntax in lambdas and properties.
+* Don's use (avoid) on method definitions
+
+### Structs and classes:
+
+* Structs are very different from classes:
+  * Structs are always passed and returned by value.
+  * Assigning a value to a member of a returned struct doesn't modify the original, because the returned
+	value is a copy of the original.
+* Almost always use a class.
+* Consider struct when the type can be treated like other value types - for example, if instances of the
+  type are small and commonly short-lived or are commonly embedded in other objects. Good examples
+  Vector3, Quaternion and Bounds.
+
+### Lambdas vs named methods
+
+* If a lambda is non-trivial (e.g. more than a couple of statements, excluding declarations), or is
+  reused in multiple places, it should probably be a named method.
+
+### Field initializers
+
+* Field initializer are generally encouraged.
+
+### Extension methods
+
+* Only use an extension method when the source of the original class is not available, or else when
+  changing the source is not feasible.
+* Only use an extension method if the functionality being added is a 'core' general feature that would
+  be appropriate to add to the source of the original class.
+  * Note - if we have the source to the class being extended, and the maintainer of the original code
+	does not want to add the function, prefer not using an extension method.
+* Only put extension methods into code libraries that are available everywhere - extensions that are
+  only available in some code will become a readability issue.
+* Be aware that using extension methods always obfuscates the code, so err on the side of not adding them.
+
+### ref and out
+
+* Use `out` for returns that are not also inputs.
+* Place `out` parameters after all other parameters in the method definition.
+* `ref` should be used rarely, when mutating an input is necessary.
+* Do not use `ref` as an optimization for passing structs.
+* Do not use `ref` to pass a modifiable container into a method. `ref` is only required when the supplied
+  container needs be replaced with an entirely different container instance.
+
+### LINQ
+
+* In general, prefer single line LINQ calls and imperative code, rather than long chains of LINQ.
+  Mixing imperative code and heavily chained LINQ is often hard to ready.
+* Prefer member extension method over SQL-style LINQ keywords - e.g. prefer `myList.Where(x)` to
+  `myList where x`.
+* Avoid `Container.ForEach(...)` for anything longer than a single statement.
+
+### Array vs List
+
+* In general, prefer `List<>` over arrays for public variables, properties, and return types (keeping
+  in mind the guidance on `IList / IEnumerable / IReadOnlyList` above).
+* Prefer `List<>` when the size of the container can change.
+* Prefer arrays when the size of the container is fixed and known at construction time.
+* Prefer array for multidimensional arrays.
+* Note:
+  * array and `List<>` both represent linear, contiguous containers.
+  * In some cases arrays are more performant, but in general `List<>` is more flexible.
+
+### Tuple as a return type
+
+* In general, prefer a named class type over `Tuple<>`, particularly when returning complex types.
+
 ### String data type
 
 * Use string interpolation to concatenate short strings, as shown in the following code:
@@ -178,6 +282,44 @@ string displayName = $"{lastName}, {firstName}";
 
 * To append strings in loops, especially when you're working with large amounts of text, use a
 StringBuilder object.
+
+#### String interpolation vs String.Format() vs String.Concat vs operator+
+
+* In general, use whatever is easiest to read, particularly for logging and assert messages.
+* Be aware that chained `operator+` concatenations will be slower and cause significant memory churn.
+* If performance is a concern, `StringBuilder` will be faster for multiple string concatenations.
+
+### using for aliases
+
+* Generally, don't alias long type names with `using`. Often this is a sing that a `Tuple<>` needs to
+  be turned into a class.
+  * e.g. `using RecordList = List<Tuple<int, float>>` should probably be a named class instead.
+* Be aware that `using` statements are only file scoped and so of limited use. Type aliases will not
+be available for external users.
+
+### Object Initializer syntax
+
+For example:
+
+```csharp
+SomeClass x = new()
+{
+	Property1 = value1;
+	Property2 = value2;
+};
+```
+
+* Object Initializer Syntax is fine for 'plain old data' types.
+* Avoid using this syntax for classes or structs with constructors.
+* If splitting across multiple lines, indent one block level.
+
+### Namespace naming
+
+* In general, namespaces should be no more than 2 levels deeps.
+* Don't force file/folder layout to match namespaces.
+* For shared library/module code, use namespaces. For leaf 'application' code, such as `unity_app`,
+  namespaces are not necessary.
+* New top-level namespaces must be globally unique and recognizable.
 
 ### Implicitly typed local variables
 
@@ -377,5 +519,59 @@ public int CalculateValue(int mulNumber)
 	}
 													// Empty line around blocks.
 	return resultValue;
+}
+
+public void ExpressionBodies()
+{
+	// For simple lambdas, fit on one line if possible, no brackets or braces required.
+	Func<int, int> increment = x => x + 1;
+
+	// Closing brace aligns with opening brace:
+	Func<int, int> defference1 = (x, y)  =>
+	{
+		long diff = (long)x - y;
+		return diff >= 0 ? : -diff;
+	};
+
+	// If defining after a continuation line break, indent the whole body:
+	Func<int, int, long> difference2 =
+		(x, y) =>
+		{
+			long diff = (long)x - y;
+			return diff >= 0 ? diff : -diff;
+		};
+
+	// Inline lambda arguments also follow these rules. Prefer a leading newline before
+	// groups of arguments if they include lambdas.
+	CallWithDelegate((x, y) =>
+		{
+			long diff = (long)x - y;
+			return diff >= 0 ? diff : -diff;
+		});
+	}
+
+	void DoNothing() {}                             // Empty blocks may be concise.
+
+	// If possible, wrap arguments by aligning newlines with the first argument.
+	void AVeryLongFunctionNameThatCausesLineWrappingProblems(int longArgumentName,
+															 int p1, int p2) {}
+
+	// If aligning argument lines with the first argument doesn't fit, or is difficult to
+	// read, wrap all arguments on new lines with a 4 space indent.
+	voi AnotherLongFunctionNameThatCausesLineWrappingProblems(
+		int longArgumentName, int longArgumentName2, int longArgumentName3) {}
+
+	void CallingLongFunctionName()
+	{
+		int veryLongArgumentName = 1234;
+		int shortArg = 1;
+		// If possible, wrap arguments by aligning newlines with the first argument.
+		AnotherLongFunctionNameThatCausesLineWrappingProblems(shortArg, shortArg,
+															  veryLongArgumentName);
+		// or
+		AnotherLongFunctionNameThatCausesLineWrappingProblems(
+			veryLongArgumentName, veryLongArgumentName, veryLongArgumentName);
+		)
+	}
 }
 ```
