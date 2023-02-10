@@ -2,7 +2,7 @@
 
 Coding conventions serve the following purposes:
 
-* They create a consistent look to the code, to that readers can focus on content, not layout.
+* They create a consistent look to the code, so that readers can focus on content, not layout.
 * They enable readers to understand the code more quickly by making assumptions based on their experience.
 * They facilitate copying, changing, and maintaining the code.
 * They demonstrate C# best practices
@@ -13,7 +13,7 @@ Coding conventions serve the following purposes:
 * [https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md]
 * [https://google.github.io/styleguide/csharp-style.html]
 
-The general rule we follow is "use Visual Studio defaults".
+The general rule followed is "use Visual Studio defaults".
 
 ## Braces
 
@@ -321,8 +321,36 @@ SomeClass x = new()
   namespaces are not necessary.
 * New top-level namespaces must be globally unique and recognizable.
 
+### Default values/null returns for structs
+
+* Prefer return 'success' boolean value and a struct `out` value.
+* Where performance isn't a concern and the resulting code significantly more readable
+  (e.g. chained null conditional operators vs deeply nested if statements) nullable structs are acceptable
+* Notes
+  * Nullable structs are convenient, but reinforce the general 'null is failure' pattern that Google
+	prefers to avoid.
+
+### Removing from containers while iterating
+
+C# (like man other languages) does not provide an obvious mechanism for removing items from containers
+while iterating. There are a couple of options:
+
+* If all that is required is to remove items that satisfy some condition, `myList.RemoveAll(somePredicate)`
+is recommended.
+* If other work needs to be done in the iteration, `RemoveAll` may not be sufficient. A common alternative
+pattern is to create a new container outside of the loop, insert items to keep in the new container, and
+swap the original container with the new one at the end of the iteration.
+
+### Calling delegates
+
+* When calling a delegate, use `Invoke()` and use the null conditional operator, e.g. `MyDel?.Invoke()`.
+This clearly marks the call at the callsite as a 'delegate that is being called'. The null check is
+concise and robust against threading race conditions.
+
 ### Implicitly typed local variables
 
+* Use of `var` is encouraged if it aids readability by avoiding type names that are noisy,
+obvious, or unimportant.
 * Only use `var` when the type is explicitly named on the right-hand side, typically due to
 either `new` or an explicit cast, e.g. `var stream = new FileStrem(...)` not
 `var stream = OpenStandardInput()`.
@@ -333,7 +361,38 @@ a previous line.
 * Avoid the use of `var` in place of `dynamic`. Use `dynamic` when you want runtime type inference.
 * You may use implicit typing to determine the type of the loop variable in for loops.
 * Don't use implicit typing to determine the type of the loop variable in foreach loops. In most cases,
-the type of elements in the collection isn't immediately obvious
+the type of elements in the collection isn't immediately obvious.
+* Ok to use `var` for transient variables that are only passed directly to other methods, e.g.
+`var item = GetItem(); ProcessItem(item);`
+* Not Ok to use `var` when working with basicc types, e.g. `var success = true;`
+* Not Ok to use `var` when working with compiler-resolved built-in numeric types, e.g.
+`var number = 12 * ReturnsFloat();`
+* Not Ok to use `var` when users would clearly benefit from knowing the type, e.g.
+`var listOfItems = GetList();`
+
+### Attributes
+
+* Attributes should appear on the line above the field, property, or method they are associated with,
+separated from the member by a newline.
+* Multiple attributes should be separated by newlines. This allows for easier adding and removing of
+attributes, and ensures each attribute is easy to search for.
+
+### Argument naming
+
+When the meaning of a function argument is nonobvious, consider one of the following remedies:
+
+* If the argument is a literal constant, and the same constant is used in multiple function calls
+in a way that tacitly assumes they're the same, use a named constant to make that constant explicit,
+and to guarantee that it holds.
+* Consider changing the function signature to replace `bool` argument with an `enum` argument. This
+will make the argument values self-describing.
+* Replace large or complex nested expressions with named variables.
+* Consider use Named Arguments to clarify arguments meanings at the call site
+* For functions that have several configurations options, consider defining a single class or struct to
+hold all the options and pass an instance of that. This approach has several advantages. Options are
+referenced by name at the call site, which clarifies their meaning. It also reduces function argument
+count, which makes function calls easier to read and write. As an added benefit, call sites don't need
+to be changed when another options is added.
 
 ### Unsigned data types
 
