@@ -21,3 +21,5 @@ fn main() {
 ## Content
 
 [The Book](TheBook/TheRustProgrammingLanguageBook.md)
+
+[Rust Web Programming](./WebProgrammingMaxwellFlitton/1.QuickIntroductionToRust.md)

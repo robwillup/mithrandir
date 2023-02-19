@@ -16,3 +16,5 @@ both Microsoft specific and third-party software and systems.**"
 ## Studies for Exam AZ-400
 
 [Study Resources and Notes](./AZ-400/README.md)
+
+## Starting my personal website from scratch

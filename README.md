@@ -1,16 +1,16 @@
-<h1>Always Learning</h1>
+# Always Learning: Software Engineering & Computer Science
 
 This repo is my notebook where I try to keep all the relevant content I've been
 learning about computer science and software engineering. This practice
 is helping me learn more and hopefully it will be beneficial to others as well.
 
 <p align="center">
-  <img width=330 height=400 src="assets/images/gandalf.jpg">
+  <img width=330 height=400 src="docs/assets/images/gandalf.jpg">
 </p>
 
-# Content
-
 ## Best Practices
+
+Best practives applied to software development in general.
 
 [Best Practices](docs/BestPractices/README.md)
 
@@ -39,6 +39,8 @@ is helping me learn more and hopefully it will be beneficial to others as well.
 [IoT](docs/IoT/README.md)
 
 ## Programming Languages and Frameworks
+
+Notes, tips, best practices, conventions for different programming languages.
 
 [.NET](docs/LanguagesAndFrameworks/.NET/README.md)
 

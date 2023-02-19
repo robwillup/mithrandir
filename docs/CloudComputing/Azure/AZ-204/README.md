@@ -8,7 +8,7 @@ I thank God for giving me strength to study. Many thanks to my wife, daughter! I
 
 Here's my badge:
 
-<img src="../../../../assets/images/azure-developer-associate-600x600.png" width=300/>
+<img src="../../../assets/images/azure-developer-associate-600x600.png" width=300/>
 
 AZ-204: Developing solutions for Microsoft Azure.
 

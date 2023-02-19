@@ -20,6 +20,57 @@ To style this web app, [FAST](https://www.fast.design/docs/integrations/blazor) 
 
 This web app is server by Nginx running in a Docker container in GCP's Cloud Run service.
 
+## Building Locally
+
+Today (2023/02/18) I cloned this project again. I was still targeting .NET 5 so I updated it to target .NET 7.
+I'm thrilled that now I get to use [file scoped namespaces](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-10.0/file-scoped-namespaces).
+
+Another great feature of newer versions (C# 9) is [top level statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/top-level-statements).
+
+Yet another one was [implicit usings](https://learn.microsoft.com/en-us/dotnet/core/tutorials/top-level-templates#implicit-using-directives).
+
+And another one was [global usings](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-10.0/globalusingdirective)
+
+My original code was this:
+
+```csharp
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace Rob
+{
+    public class Program
+    {
+        public static async Task Main(string[] args)
+        {
+            var builder = WebAssemblyHostBuilder.CreateDefault(args);
+            builder.RootComponents.Add<App>("#app");
+
+            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+            await builder.Build().RunAsync();
+        }
+    }
+}
+
+```
+
+My updated code is:
+
+```csharp
+WebAssemblyHostBuilder builder = WebAssemblyHostBuilder.CreateDefault(args);
+builder.RootComponents.Add<App>("#app");
+
+builder.Services.AddScoped(_ => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+await builder.Build().RunAsync();
+```
+
+But of course, I still need to catch up with latest Blazor best practices to find out what is the convention here.
+
 ### Building the Docker Image
 
 ```bash
@@ -156,9 +207,9 @@ The identifiers in the bundled CSS file, `{ASSEMBLY NAME}.styles.css`, did not m
 
 In the two images below, the `scope` identifiers are matching, and that's what I have when running the app locally with the `dotnet` CLI and also after the problem was resolved with the Docker image:
 
-![elements](../../../../assets/images/MyPersonalWebsite/css-isolation-issue-elements.png)
+![elements](../../../assets/images/MyPersonalWebsite/css-isolation-issue-elements.png)
 
-![source](../../../../assets/images/MyPersonalWebsite/css-isolation-issue-source.png)
+![source](../../../assets/images/MyPersonalWebsite/css-isolation-issue-source.png)
 
 #### The cause
 
