@@ -50,4 +50,11 @@ here's the [link](https://docs.github.com/en/authentication/keeping-your-account
 
 ## Keep It Safe
 
-Last but not least, we should talk about keeping our PATs safe.
+Last but not least, we should talk about keeping our PATs safe. Like passwords,
+PATs have inherent security risks and therefore they should be kept as safely as password.
+
+* Do not share PATs, because as the name implies, they are personal.
+* Do not commit PATs along with your source code.
+* Do not paste PATs in insecure locations without enough access control points.
+
+[More information](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#keeping-your-personal-access-tokens-secure).
