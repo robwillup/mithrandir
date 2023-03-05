@@ -1,0 +1,34 @@
+# Introduction
+
+The Rust programming language helps you write fastes, more reliable
+software. High-level ergonomics and low-level control are often at
+odds in programming lanaguages design; Rust challenges that conflic.
+Through balancing powerful technical capacity and a great developer
+experience, Rust gives you the option to control low-level details
+(such as memory usage) without all the hassle traditionally
+associated with such control.
+
+## Who Rust Is For
+
+Rust is ideal for many people for a variety of reasons.
+
+### Teams of Developers
+
+Rust is proving to be a productive tool for collaborating among large
+teams of developers with varying levels of systems programming
+knowledge. Low-level code is prone to a variety of subtle bugs, which
+in most other languages can be caught only through extensive testing
+and careful code review by experienced developers. In Rust, the
+compiler plays a gatekeeper role by refusing to compile code with
+these elusive bugs, including concurrency.
+
+> This is only a test
+
+* Another test
+
+|Column| Column 1|
+|:----:|:-------:|
+|Data  |Data here|
+
+[Google](https://www.google.com)
+
