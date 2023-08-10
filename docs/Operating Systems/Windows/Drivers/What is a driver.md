@@ -7,7 +7,7 @@ communication between the operating system and a device.
 
 Application <-> OS <-> Driver <-> Device
 
-* not all drivers have to written by the companies that designed the device.
+* not all drivers have to be written by the companies that designed the device.
 * not all drivers communicate directly with a device. Some drivers just
 manipulate the request and pass it along.
 * Some filter drivers observe and record information about I/O requests but
