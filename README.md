@@ -1,4 +1,4 @@
-# Always Learning: Software Engineering & Computer Science
+# Software Engineering & Computer Science Notebook
 
 This repo is my notebook where I try to keep all the relevant content I've been
 learning about computer science and software engineering. This practice
@@ -57,13 +57,3 @@ Notes, tips, best practices, conventions for different programming languages.
 ## Math
 
 [Math](docs/Math/README.md)
-
-## Physics
-
-## Modern Authentication
-
-## Paradigms
-
-## Software Architecture
-
-## Quantum Computing
