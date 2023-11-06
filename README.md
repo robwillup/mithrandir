@@ -4,9 +4,11 @@ This repo is my notebook where I try to keep all the relevant content I've been
 learning about computer science and software engineering. This practice
 is helping me learn more and hopefully it will be beneficial to others as well.
 
-<p align="center">
+<div align="center">
   <img width=230 height=300 src="assets/images/gandalf.jpg">
-</p>
+
+  <p>Art work by Nidoart <a target="_black" href="https://www.facebook.com/nidoart/">facebook.com/nidoart</a></p>
+</div>
 
 ## Best Practices
 
