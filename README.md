@@ -13,7 +13,7 @@ beneficial to others as well.
 
 ## Best Practices
 
-Best practives applied to software development in general.
+Best practices applied to software development in general.
 
 [Best Practices](docs/BestPractices/README.md)
 
