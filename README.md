@@ -5,7 +5,7 @@ learning about computer science and software engineering. This practice
 is helping me learn more and hopefully it will be beneficial to others as well.
 
 <p align="center">
-  <img width=330 height=400 src="docs/assets/images/gandalf.jpg">
+  <img width=230 height=300 src="assets/images/gandalf.jpg">
 </p>
 
 ## Best Practices
