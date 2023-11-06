@@ -1,8 +1,9 @@
 # Software Engineering & Computer Science Notebook
 
-This repo is my notebook where I try to keep all the relevant content I've been
-learning about computer science and software engineering. This practice
-is helping me learn more and hopefully it will be beneficial to others as well.
+A notebook to keep relevant content I've been
+learning about computer science and software engineering.
+This practice is helping me learn more and hopefully it will be
+beneficial to others as well.
 
 <div align="center">
   <img width=230 height=300 src="assets/images/gandalf.jpg">
@@ -20,25 +21,9 @@ Best practives applied to software development in general.
 
 [Design Patterns](docs/DesignPatterns/README.md)
 
-## Cloud Computing
-
-[Cloud Computing](docs/CloudComputing/README.md)
-
 ## Computer Science
 
 [Computer Science](docs/ComputerScience/README.md)
-
-## Cyber Security
-
-[Cyber Security](docs/CyberSec/README.md)
-
-## Distributed Computing
-
-[Distributed Computing](docs/DistributedComputing/README.md)
-
-## IoT
-
-[IoT](docs/IoT/README.md)
 
 ## Programming Languages and Frameworks
 
@@ -53,8 +38,6 @@ Notes, tips, best practices, conventions for different programming languages.
 [Elixir](docs/LanguagesAndFrameworks/Elixir/README.md)
 
 [C](docs/LanguagesAndFrameworks/C/README.md)
-
-[Java](docs/LanguagesAndFrameworks/Java/README.md)
 
 ## Math
 
