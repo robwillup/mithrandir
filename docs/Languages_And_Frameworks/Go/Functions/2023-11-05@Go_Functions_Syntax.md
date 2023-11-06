@@ -1,4 +1,4 @@
-# Go Functions For The 5-Year-Old Me (who already know some programming concepts)
+# Go Functions For The 5-Year-Old Me
 
 As we begin, keep in mind that, as in other programming languages, functions in Go
 must be as clear as possible.
