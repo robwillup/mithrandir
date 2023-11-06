@@ -7,7 +7,7 @@ is helping me learn more and hopefully it will be beneficial to others as well.
 <div align="center">
   <img width=230 height=300 src="assets/images/gandalf.jpg">
 
-  <p style="font-size:9pt">(Art work by Nidoart <a target="_blank" href="https://www.facebook.com/nidoart/">facebook.com/nidoart</a>)</p>
+  <p>(Art work by Nidoart <a href="https://www.facebook.com/nidoart/">facebook.com/nidoart</a>)</p>
 </div>
 
 ## Best Practices
