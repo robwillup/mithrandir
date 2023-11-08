@@ -4,11 +4,13 @@ As we begin, keep in mind that, as in other programming languages, functions in 
 must be as clear as possible.
 
 > **5yo me**: What is a "function"?
+>
+> **Older me:** OK, yeah. I suppose we should start with that.
 
 ## What is a function?
 
-Think of a function as a tool. A tool is something that you can use and re-use to
-transform something into something else in order to perform a job or activity.
+Think of a function as a tool. People use and re-use tools to transform something into
+something else in order to perform a job or activity.
 Take a scissor for example. You can re-use a scissor over and over again to transform
 a material (paper, plastic, etc.) into a modified version (trimmed, cut, etc.)
 
@@ -22,14 +24,14 @@ Go has a special keyword that we can use to create a function: `func`.
 
 > **5yo me**: What is a keyword?
 >
-> **Older me**: A software is made of a lot of words, some of those words you can choose,
+> **Older me**: Software programs are made of a lot of words, some of those words you can choose,
 > but others are "reserved", which means you cannot use them to name your own stuff.
 
 This is an example of a function in Go:
 
 ```go
 func double(p1 int) int {
-    // Does some stuff to double the input...
+    // Code to double the input...
 }
 ```
 
@@ -46,10 +48,11 @@ In Go, to specify parameters for your functions you first...
 
 > **5yo me:** What is a parameter?
 >
-> **Older me:** Ok, let's see... Think of a pencil sharpener as our function. We can
-> compare the hole in the pencil sharpener as a "parameter". You cannot sharpen an
-> apple, or a book. The only thing that fits is a pencil. So in programming, a
-> parameter tells other parts of your code what can go into the function.
+> **Older me:** Ok, let's see... Think of a paper printer as our function. We can
+> say that one of the "parameters" to the printer is a paper sheet. You cannot use
+> a paper printer to print an apple, or a cat. The only thing that fits is a
+> paper sheet. So in programming, a parameter tells other parts of your code what
+> can go into the function.
 
 So you first add the name of the parameter then the type, e.g.:
 `(parameter1 float64)`. If you have more then one parameter of the same type,
@@ -68,17 +71,18 @@ return more than one value, `func doubleAndHalf(number int) (int, float64)`.
 
 ## The Body
 
-After this closing parenthesis, you will add a opening curly bracket `{`...
+After this closing parenthesis, you will add an opening curly bracket `{`...
 
 > **5yo me**: What do you mean the "body"?
 >
 > **Older me:** Just like your own body, from the outside you don't see it, but
 > there is a lot going on in the inside to allow you to breathe, and think, etc.
-> A using our pencil sharpener example, if you open it up, you will see that
-> inside there is a blade that does the actual sharpening. A function, has code
+> And using our paper printer example, if you open it up, you will see that
+> inside there is a mechanism that does the actual printing. A function, has code
 > inside to perform that actual job. That's the body of the function.
 
-That curly bracker `{` must be in the same line as your function signature (the name and other parts we just talked about).
+That curly bracket `{` must be in the same line as your function signature (the name
+and other parts we just talked about).
 
 In the following lines you add the function body. And at the end, on a new line you add the closing bracket:
 
