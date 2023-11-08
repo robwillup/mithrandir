@@ -7,6 +7,8 @@ must be as clear as possible.
 >
 > **Older me:** OK, yeah. I suppose we should start with that.
 
+<br />
+
 ## What is a function?
 
 Think of a function as a tool. People use and re-use tools to transform something into
