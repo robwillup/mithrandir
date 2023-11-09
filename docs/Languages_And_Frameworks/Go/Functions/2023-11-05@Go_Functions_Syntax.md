@@ -1,18 +1,18 @@
-# Go Functions For The 5-Year-Old Me
+# Go Functions Zone - Act 1: Overview
 
-As we begin, keep in mind that, as in other programming languages, functions in Go
-must be as clear as possible.
+This is a short Act, all you have to do to pass is to write your own Go function
+that returns the product of two numbers. And as we begin, keep in mind that, as in other programming languages, functions in Go must be as clear as possible, so
+remember to use a descriptive name for your func...
 
-> **5yo me**: What is a "function"?
+> **Player**: Wait, what is a "function"?
 >
-> **Older me:** OK, yeah. I suppose we should start with that.
+> **Hint System:** OK, yeah. I suppose we should start with that.
 
 <br />
 
 ## What is a function?
 
-Think of a function as a tool. People use and re-use tools to transform something into
-something else in order to perform a job or activity.
+Think of a function as a tool. People use and re-use tools to transform something into something else in order to perform a job or activity.
 Take a scissor for example. You can re-use a scissor over and over again to transform
 a material (paper, plastic, etc.) into a modified version (trimmed, cut, etc.)
 
@@ -26,9 +26,9 @@ else (the output).
 
 Go has a special keyword that we can use to create a function: `func`.
 
-> **5yo me**: What is a keyword?
+> **Player**: What is a keyword?
 >
-> **Older me**: Software programs are made of a lot of words, some of those words you can choose,
+> **Hint System**: Software programs are made of a lot of words, some of those words you can choose,
 > but others are "reserved", which means you cannot use them to name your own stuff.
 
 This is an example of a function in Go:
@@ -52,9 +52,9 @@ If your function takes parameters (input), you will add them between the parenth
 
 In Go, to specify parameters for your functions you first...
 
-> **5yo me:** What is a parameter?
+> **Player:** Sorry, but there's another thing I don't know. What are parameters?
 >
-> **Older me:** Ok, let's see... Think of a paper printer as our function. We can
+> **Hint System:** Ok, let's see... Think of a paper printer as our function. We can
 > say that one of the "parameters" to the printer is a paper sheet. You cannot use
 > a paper printer to print an apple, or a cat. The only thing that fits is a
 > paper sheet. So in programming, a parameter tells other parts of your code what
@@ -83,9 +83,9 @@ return more than one value, `func doubleAndHalf(number int) (int, float64)`.
 
 After this closing parenthesis, you will add an opening curly bracket `{`...
 
-> **5yo me**: What do you mean the "body"?
+> **Player**: What do you mean the "body"?
 >
-> **Older me:** Just like your own body, from the outside you don't see it, but
+> **Hint System:** Just like your own body, from the outside you don't see it, but
 > there is a lot going on in the inside to allow you to breathe, and think, etc.
 > And using our paper printer example, if you open it up, you will see that
 > inside there is a mechanism that does the actual printing. A function, has code
@@ -102,7 +102,12 @@ func double(p1 int) (int) {
 }
 ```
 
-> **Older me:** I see you're already getting distracted, so that's enough for now.
-> Next time, let's talk more about other aspects of functions. Now, go have some func.
+> **Player:** This is getting more complex quickly. Can I save my progress here and quit for now?
+>
+> **Hint System:** Not at this point. If you want to save your progress, you must
+> first create a function that returns the product of two numbers as mentioned
+> in the beginning of this Act.
+>
+> Write and run your function here: [The Go Playground](https://go.dev/play/)
 
 <br />
