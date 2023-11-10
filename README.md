@@ -2,7 +2,7 @@
 
 A notebook to keep relevant content I've been
 learning about computer science and software engineering.
-This practice is helping me learn more and hopefully it will be
+This has been helping me learn more and hopefully it will be
 beneficial to others as well.
 
 <div align="center">
