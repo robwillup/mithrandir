@@ -68,7 +68,7 @@ func work(p1, p2 float64) {
 
 ### Return Values
 
-In the physical world, a tool must yield a result from its work, for example, a sharpened pencil, or a trimmed paper sheet, etc. In the programming world, function can (should) return one or more values as a result of its operation.
+In the physical world, a tool must yield a result from its work, for example, a sharpened pencil, or a trimmed paper sheet, etc. In the programming world, a function can return one or more values as a result of its operation.
 
 So after the closing parenthesis where you added the parameters, if your function returns a value, that's where you specify the type:
 
@@ -110,4 +110,4 @@ func double(p1 int) (int) {
 >
 > Write and run your function here:
 
-#### [The Go Playground](https://go.dev/play/)
+### [The Go Playground](https://go.dev/play/)
