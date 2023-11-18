@@ -1,5 +1,8 @@
 ## Go Functions Zone - Act 1: Overview
 
+[Official Go documentation about functions](https://go.dev/doc/effective_go#functions)
+___
+
 This is a short Act, all you have to do to pass is to write your own Go function that returns the product of two numbers. And as we begin, keep in mind that, as in other programming languages, functions in Go must be as clear as possible, so remember to use a descriptive name for your func...
 
 > **Player**: Wait, what is a "function"?
@@ -8,9 +11,9 @@ This is a short Act, all you have to do to pass is to write your own Go function
 
 ### What is a function?
 
-Think of a function as a tool. People use and re-use tools to transform something into something else in order to perform a job or activity. Take a scissor for example. You can re-use a scissor over and over again to transform a material (paper, plastic, etc.) into a modified version (trimmed, cut, etc.)
+Think of a function as a tool. People use tools to transform things in order to perform a job or activity. Take a scissor for example. You can use a scissor over and over again to transform a material (paper, plastic, etc.) into a modified version (trimmed, cut, etc.)
 
-In a programming language, a function is very similar to this idea. It is a tool that an application uses over and over to transform something (the input) into something else (the output).
+In a programming language, a function is very similar to this idea. It is a tool that an application uses one or more times to transform something (the input) into something else (the output).
 
 ### What does a function in Go look like?
 
@@ -18,7 +21,7 @@ Go has a special keyword that we can use to create a function: `func`.
 
 > **Player**: What is a keyword?
 >
-> **Hint System**: Software programs are made of a lot of words, some of those words you can choose, but others are "reserved", which means you cannot use them to name your own functions and variables.
+> **Hint System**: Software programs are written with words, some of those words you can choose, but others are "reserved", which means you cannot use them to name your own functions and variables.
 
 This is an example of a function in Go:
 
@@ -28,7 +31,7 @@ func double(p1 int) int {
 }
 ```
 
-The first thing in a function is the aforementioned keyword `func`. Right after that comes the name of the function which you need to choose. For example, `add` or `listFiles`, etc. Next comes a pair of `()`.
+The first thing in a function is that keyword `func`. Right after that comes the name of the function which you need to choose. For example, `add` or `listFiles`, etc. Next comes a pair of `()`.
 
 If your function takes parameters (input), you will add them between the parenthesis.
 
@@ -58,7 +61,7 @@ func work(p1 float64, p2 float64) {
 }
 ```
 
-Or you can used this simplified syntax:
+Or you can use this simplified syntax:
 
 ```go
 func work(p1, p2 float64) {
@@ -74,9 +77,9 @@ So after the closing parenthesis where you added the parameters, if your functio
 
 ```go
 func work(number int) int {
-    //                   ^
-    //                   |
-    //              return type
+    //                 ^
+    //                 |
+    //            return type
 }
 ```
 
@@ -99,7 +102,7 @@ After this closing parenthesis, you will add an opening curly bracket `{`...
 That curly bracket `{` must be in the same line as your function signature (the name and other parts we just talked about). In the following lines you add the function body. And at the end, on a new line you add the closing bracket:
 
 ```go
-func double(p1 int) (int) {
+func double(p1 int) int {
     return p1 * 2 // <-- The body
 }
 ```
@@ -110,4 +113,6 @@ func double(p1 int) (int) {
 >
 > Write and run your function here:
 
-### [The Go Playground](https://go.dev/play/)
+## The Go Playground
+
+Visit the page below where you can write your function and run it in the browser to test it: [https://go.dev/tour/basics/4](https://go.dev/tour/basics/4)
