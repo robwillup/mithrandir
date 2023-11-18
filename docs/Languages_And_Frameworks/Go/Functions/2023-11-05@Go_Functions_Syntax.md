@@ -116,3 +116,7 @@ func double(p1 int) int {
 ## The Go Playground
 
 Visit the page below where you can write your function and run it in the browser to test it: [https://go.dev/tour/basics/4](https://go.dev/tour/basics/4)
+
+## Recap
+
+![Go Function Parts](../../../../assets/images/go_functions_parts.jpeg)
