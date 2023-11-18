@@ -119,4 +119,4 @@ Visit the page below where you can write your function and run it in the browser
 
 ## Recap
 
-![Go Function Parts](../../../../assets/images/go_functions_parts.jpeg)
+![Go Function Parts](https://github.com/robwillup/mithrandir/blob/main/assets/images/go_functions_parts.jpeg?raw=true)
