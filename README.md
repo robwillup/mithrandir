@@ -15,29 +15,29 @@ beneficial to others as well.
 
 Best practices applied to software development in general.
 
-[Best Practices](docs/BestPractices/README.md)
+[Best Practices](docs/Best_Practices/README.md)
 
 ## Design Patterns
 
-[Design Patterns](docs/DesignPatterns/README.md)
+[Design Patterns](docs/Design_Patterns/README.md)
 
 ## Computer Science
 
-[Computer Science](docs/ComputerScience/README.md)
+[Computer Science](docs/Computer_Science_Concepts/README.md)
 
 ## Programming Languages and Frameworks
 
 Notes, tips, best practices, conventions for different programming languages.
 
-[.NET](docs/LanguagesAndFrameworks/.NET/README.md)
+[.NET](docs/Languages_And_Frameworks/.NET/README.md)
 
-[Go](docs/LanguagesAndFrameworks/Go/README.md)
+[Go](docs/Languages_And_Frameworks/Go/README.md)
 
-[Rust](docs/LanguagesAndFrameworks/Rust/README.md)
+[Rust](docs/Languages_And_Frameworks/Rust/README.md)
 
-[Elixir](docs/LanguagesAndFrameworks/Elixir/README.md)
+[Elixir](docs/Languages_And_Frameworks/Elixir/README.md)
 
-[C](docs/LanguagesAndFrameworks/C/README.md)
+[C](docs/Languages_And_Frameworks/C/README.md)
 
 ## Math
 
