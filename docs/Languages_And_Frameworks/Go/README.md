@@ -32,3 +32,5 @@ Go
 ## [The Go Programming Language - Book Study](./The%20Go%20Programming%20Language%20Book/README.md)
 
 ## [Go Mobile](./Go%20Mobile/Getting%20Started.md)
+
+## [Go Functions](./Functions/)
