@@ -3,14 +3,6 @@
 [Official Go documentation about functions](https://go.dev/doc/effective_go#functions)
 ___
 
-- [What is a function?](#what-is-a-function)
-- [What does a function in Go look like?](#what-does-a-function-in-go-look-like)
-- [Parameters](#parameters)
-- [Return Values](#return-values)
-- [The Body](#the-body)
-- [The Go Playground](#the-go-playground)
-- [Recap](#recap)
-
 This is a short Act, all you have to do to pass is to write your own Go function that returns the product of two numbers. And as we begin, keep in mind that, as in other programming languages, functions in Go must be as clear as possible, so remember to use a descriptive name for your func...
 
 > **Player**: Wait, what is a "function"?
