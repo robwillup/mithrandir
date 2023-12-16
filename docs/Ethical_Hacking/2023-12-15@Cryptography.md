@@ -37,4 +37,4 @@ Encryption has also been pretty common in several systems and protocols, an one 
 
 There is a lot more to learn about cryptography. And I mean *a lot*. But to keep this post short I'm stopping here. In future posts about software security and cryptography other aspects and more details will be covered.
 
-![Cryptography](https://github.com/robwillup/mithrandir/blob/main/assets/images/Ethical_Hacking/2023-12-15@Cryptography.jpeg?raw=true)
+![Cryptography](https://github.com/robwillup/mithrandir/blob/main/assets/Ethical_Hacking/2023-12-15@Cryptography_simple_flow.jpeg?raw=true)
