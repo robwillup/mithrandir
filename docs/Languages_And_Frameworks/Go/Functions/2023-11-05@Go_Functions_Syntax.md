@@ -1,4 +1,4 @@
-<h2>Go Functions Zone - Act 1: Overview</h2>
+## Go Functions Zone - Act 1: Overview
 
 [Official Go documentation about functions](https://go.dev/doc/effective_go#functions)
 ___

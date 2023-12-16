@@ -1,4 +1,4 @@
-<h2>Cryptography For Beginners</h2>
+## Cryptography For Beginners
 
 In my first years as a software developers, I saw this word a lot: `cryptography`.
 I even used it in parts of my work. But at that time my understanding of it was still very superficial and unstructured.
