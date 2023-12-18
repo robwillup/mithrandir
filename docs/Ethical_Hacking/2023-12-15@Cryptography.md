@@ -1,6 +1,6 @@
 ## Cryptography For Beginners
 
-In my first years as a software developer, I encountered this word a lot: `cryptography`.
+In my first years as a software developer, I remember encountering some form of cryptography every now and then.
 I even used it in parts of my work. But at that time my understanding of it was still very superficial and unstructured.
 In this very short post I attempt to offer a simple explanation of cryptography for others who may also feel like they need to understand it better.
 
