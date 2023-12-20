@@ -1,4 +1,4 @@
-# Some Common Cryptography Algorithms
+# Common Cryptography Algorithms
 
 ## Digital Signature Algorithm (DSA)
 
