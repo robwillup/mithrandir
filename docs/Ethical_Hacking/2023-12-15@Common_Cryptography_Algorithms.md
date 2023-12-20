@@ -28,7 +28,7 @@ It is difficult to obtain the private key (c,f) from the public key (c,e) unless
 
 RSA is very secure.
 
-## Diffi-Hellman
+## Diffie-Hellman
 
 Allows two parties to establish a shared secret key over an insecure channel.
 Does not provide key exchange authentication and is vulnerable to a variety of cryptographic assaults.
