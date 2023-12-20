@@ -1,17 +1,19 @@
-# The Interview Process
+# Notes On The Interview Process
+
+> Notes taken while reading the book [Cracking the Coding Interview](https://www.google.com/books/edition/_/jD8iswEACAAJ?hl=en)
 
 At the largest tech companies, most of the interview process will be composed of algorithm and coding problems.
-What are they looking for? They want to evaluate my ability to solve algorithmic problems you haven't seen before.
+They want to evaluate your ability to solve algorithmic problems you haven't seen before.
 
-So the interviews at big tech companies aim at finding out if an interviewee is capable of solving algorithmic problems they haven't seen before.
+As you are solving the problem, do your best to explain your thought process.
 
-You should do your best to explain your thought process.
+## What are the interviewers looking at?
 
 * Analytical skills:
-  * Did you need much help solving the problem?
-  * How optimal was your solution?
+  * Did you need much help solving the problem? Did you get stuck too much?
+  * How optimal was your solution? You need to know about time/space complexity.
   * How long did it take you to arrive at that solution?
-  * Did you consider all trade-offs?
+  * Did you consider all trade-offs? Did you think of edge cases?
 * Coding skills: reasonable, clean, organized, good style code
 * Experience
 * Culture fit / Communication skills
@@ -22,9 +24,9 @@ In a standard algorithm question, only the first three might matter.
 
 ### False negatives are acceptable
 
-This is sad (and frustrating for candidates), but true.
-
 From the company's perspective, it's acceptable to miss out on some good people. They are far more concerned with false positives: people who do well in an interview but are not in fact very good.
+
+This means you have to be very good.
 
 ### Problem-solving skills are valuable
 
@@ -37,5 +39,3 @@ Basic computer science knowledge is useful. Understanding trees, graphs, lists, 
 ### Whiteboards let you focus on what matters
 
 Focus on solving the problem without worrying about environment.
-
-It is what it is so let's do the best we can with it.

@@ -1,19 +1,14 @@
-# Arrays and Strings
+# Data Structures
 
-Let's take a look at some of the more common techniques and issues with these data structures.
+> Notes taken while reading the book [Cracking the Coding Interview](https://www.google.com/books/edition/_/jD8iswEACAAJ?hl=en)
 
 ## Hash Tables
 
-A hash table is a data structure that maps keys to values for highly efficient lookup. So this is
-similar to dictionaries.
-
-Hash tables benefit from fast data retrieval and are foundational to standard tools and techniques
-like caching and database indexing.
-
+A hash table is a data structure that maps keys to values for highly efficient lookup. So this is similar to dictionaries.
+Hash tables benefit from fast data retrieval and are foundational to standard tools and techniques like caching and database indexing.
 There are a number of ways of implementing this. Here let's see a common but simple interpretation.
-
-In this implementation a array of linked list and a hash code function are used. To insert a key - which
-might be a string or essentially any other data type) and value, this is what is done:
+In this implementation an array of linked lists and a hash code function are used. To insert a key - which
+might be a string or essentially any other data type - and value, this is what is done:
 
 1. First, compute the key's hash code, which will usually be an int or long. Note that two different keys
 could have the same hash code, as there may be an infinite number of keys and a finite number of ints.

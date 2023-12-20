@@ -1,48 +1,59 @@
-# Before the Interview
+# Preparing For Tech Interviews
+
+> Notes taken while reading the book [Cracking the Coding Interview](https://www.google.com/books/edition/_/jD8iswEACAAJ?hl=en)
 
 ## Get the right experience
 
-* Start Something: Build a project on your own time, participate in hackathons, or contribute to an open source project. It doesn't matter too much what it is. The important thing is that you're coding.
-* Shift Work Responsibilities more towards coding.
-* Use your nights and weekends. If you have some free time, use it to build a mobile app, a web app, or a piece of desktop software. Doing such projects is also a great way to get experience with new technologies, making you more relevant to today's companies. This project work should definitely be listed on your resume; few things are as impressive to an interviewer as a candidate who built something "just for fun".
+* Use your time to actually build an application, contribute to an open-source project, hack a game, etc. It doesn't really matter what kind of app your doing, the relevant thing is that you're getting experience writing real code.
+* At your work, as much as possible, try to get more coding tasks. You can automate some process with an app or script for example.
+* Working on a software project on your free time, recruiters often like to find candidates who spend the free time coding just for fun, just because they like.
 
 ## Writing a great resume
 
-My resume must show that I am smart and that I can code.
+Basically, your resume has to show two things:
+
+* You're smart
+* You can code
 
 In the US, it is strongly advised to keep a resume to one page if you have less than ten years of experience.
 
-Think twice about a long resume. Shorter resumes are often more impressive.
+Careful with long resumes. Shorter resumes are often more impressive.
 
 ## Employment History
 
-Show what you did, how you did it, what the results were. Ideally, you should try to make the results "measurable" somehow.
+Write about what you did, how, and the results. Make the results measurable. Example:
+
+```docx
+Created a mobile app using X that automated Y and saved Z annually.
+```
 
 ## Projects
 
-Developing the projects section on your resume is often the bet way to present yourself as more experienced.
+Create a projects section on your resume. This will show that you are a more experienced developer.
 
-What should you build? Honestly, it doesn't matter much. Some employers really like open source projects. You could build a mobile app, a web app, or almost anything.
+Again, it doesn't matter what you build, but making it open-source is often a good idea.
 
 ## Programming languages and software
 
-For software engineering positions it's almost irrelevant to add software like IDEs, DBMS, etc. Do not add office software.
+It's probably irrelevant to add software like IDEs, DBMS, etc. Do not add office software.
 
 For languages, one alternative is to add your experience level along with the language. For example:
 
 * Languages: C# (expert), Go (proficient), JavaScript (prior experience)
 
-## Beware of potential stigma
+But now after ChatGPT I honestly think that your experience with a particular programming language is also becoming less important. Honestly, Gen AI already is writing better software than we ever could. Other skills are becoming more relevant, such as ML and still foundational concepts in AI, computer science and other technology fields.
+
+## You have to know that stigma exists
 
 ### Enterprise languages
 
-VB or .NET as a whole: If not applying to these, you will need to show that you're really able to code in other languages.
+VB or .NET as a whole: If not applying to these, you will need to show that you're really able to code in other languages. This even applies to C#.
 
-### Being too language focused
+### Being too language focused is not always good
 
 Be careful to show that you're perfectly capable of using and mastering other languages, even though you've focused on another language so far.
 
-### Certifications
+### Certifications can have a negative impression
 
 In some cases you will need to remove this from your resume because some companies will assume that you're too technology focused.
 
@@ -55,12 +66,12 @@ Learn more languages. Build projects on different languages.
 ## Preparation Map
 
 * 1+ Years before the interview
-  * Build projects outside of school/worl
+  * Build projects outside of school/work
   * Learn multiple programming languages
   * Expand network
   * Build website / portfolio showcasing your experience
   * Focus work on "meaty"/coding projects
-  * Do LeetCode / Hackerhand
+  * Do LeetCode / HackerRank
 * 3 - 12 Months before the interview
   * Continue to work on projects
   * Try to add on one more project
