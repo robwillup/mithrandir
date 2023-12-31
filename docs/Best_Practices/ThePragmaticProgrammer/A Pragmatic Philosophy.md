@@ -1,11 +1,11 @@
-# A Pragmatic Philosophy
+## A Pragmatic Philosophy
 
->Pragmatic Programmers think beyond the immediate problem, always trying to place
+> Pragmatic Programmers think beyond the immediate problem, always trying to place
 it in its larger context, always trying to be aware of the bigger picture.
 After all, without this larger context, how can you be pragmatic? How can you
 make intelligent compromises and informed decisions?
 
-**For me:** Don't just try to get a code snipped from Stack Overflow to solve a 
+**For me:** Don't just try to get a code snipped from Stack Overflow to solve a
 specific problem. Instead, really seek to understand the big picture:
 
 * What is this system?
@@ -21,5 +21,4 @@ specific problem. Instead, really seek to understand the big picture:
 Pragmatic Programmers
 >take responsibility for everything they do.
 
-**For me:** Take responsibility for your projects. No matter if they are
-personal projects or company projects. Own them and care for them in order to 
+**For me:** Take responsibility for your projects. No matter if they are personal projects or company projects.

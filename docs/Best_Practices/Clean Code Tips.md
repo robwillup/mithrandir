@@ -1,9 +1,7 @@
 # Clean Code Tips
 
-Your code should be kept as short and simple as possible. This means that
-unnecessarily complex logic should not be used just for the sake of making
-the code look more sophisticated. That will actually prove the opposite.
-Break down your code into smaller functions or methods that perform
+Your code should be kept as short and simple as possible. This means that unnecessarily complex logic should not be used just for the sake of making
+the code look more sophisticated. That will actually prove the opposite. Break down your code into smaller functions or methods that perform
 specific tasks.
 
 It is also important to study and know the conventions of the programming
@@ -42,7 +40,7 @@ and becomes cleaner and clearer.
 
 If you have played Sonic 2 on the Mega Drive or Genesis, or Sonic Mania, you
 will know what is the "1.5 player mode". In that mode, the second player is
-controlled by the CPU and it will help you with certain things at times, however, you are still in controll of the 1st player. This is a good analogy for 
+controlled by the CPU and it will help you with certain things at times, however, you are still in controll of the 1st player. This is a good analogy for
 a linter. Automated tools such as linters can be invaluable allies in your
 quest for clean code. Linters analyze your code for potential issues,
 style violations, and command programming mistakes. They provide actionable
