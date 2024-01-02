@@ -24,4 +24,3 @@ Reload your shell and you will see the new version with:
 ```bash
 node -v
 ```
-

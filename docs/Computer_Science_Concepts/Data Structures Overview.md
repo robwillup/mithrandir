@@ -1,4 +1,4 @@
-# Data Structures Overview
+## Data Structures Overview
 
 Data items that we group together are called "compound data".
 
@@ -19,7 +19,7 @@ The Big O notation is pretty much the measure of how well an operation scales.
 If you have ten items and then you add a million more, how much longer will each
 operation take.
 
-## Linked List
+### Linked List
 
 The atomic unit of the linked list is something called "Node",
 which contains a value and a pointer.
@@ -35,8 +35,7 @@ the last node which doesn't contain a pointer is called *Tail*.
 |Adding| retrieval|
 |Deleting| searching|
 
-
-## Array
+### Array
 
 A continuous block of cells in the computer memory.
 
@@ -45,13 +44,10 @@ A continuous block of cells in the computer memory.
 | retrieval | adding|
 | | deleting |
 
-## Hash Table (Dictionary)
+### Hash Table (Dictionary)
 
 | Pros | Cons |
 |:----:|:----:|
 | add | key collisions |
 | remove | |
 | retrieve | |
-
-## Stack + Queue
-

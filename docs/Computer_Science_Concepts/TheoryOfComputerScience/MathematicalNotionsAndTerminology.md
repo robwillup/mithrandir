@@ -4,11 +4,12 @@ Automata theory deals with the definitions and properties of mathematical models
 
 Automata theory is an excellent place to begin the study of the theory of computation. The theories of computability and complexity require a precise definition of a *computer*. Automata theory allows practice with formal definitions of computation as it introduces concepts relevant to other nontheoretical areas of computer science.
 
-# Mathematical Notions and Terminology
+## Mathematical Notions and Terminology
 
 As in any mathematical subject, we begin with a discussion of the basic mathematical objects, tools, and notations that we expect to use.
 
 ## SETS
+
 A **set** is a group of objects represented as a unit. Sets may contain any type of object, including numbers, symbols, and even other sets. The objects in a set are called its **elements** or **members**. Sets may be described formally in several ways.
 One way is by listing a set's elements inside braces. Thus the set
 

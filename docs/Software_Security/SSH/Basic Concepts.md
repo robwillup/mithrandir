@@ -1,10 +1,10 @@
-# Basic SSH Concepts
+## Basic SSH Concepts
 
 Describes basic SSH concepts.
 
 [Source](https://schh.medium.com/ssh-for-dummies-ea168e6ff547)
 
-## TL;DR
+### TL;DR
 
 * SSH Stands for Secure Shell.
 * Purpose: Remove server administration.
@@ -47,7 +47,7 @@ connection between the client and the server happens in three stagers:
 2. Generation of a session key to encrypt all the communication.
 3. Authentication of the client.
 
-## Verification of the Server by the Client
+### Verification of the Server by the Client
 
 Server authentication is a process that allows client applications to
 validate a server's identity. If the server fails the SSH host key

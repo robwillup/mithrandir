@@ -1,9 +1,9 @@
-# Functional Programming - Big Picture
+## Functional Programming - Big Picture
 
 What is functional programming?
 
-> Functional Programming is a paradigm that treats computation as the evaluation of mathematical 
-> functions and avoids chanding-state and mutable data.
+> Functional Programming is a paradigm that treats computation as the evaluation of mathematical
+> functions and avoids changing state and mutable data.
 
 **Other Paradigms**
 
@@ -18,11 +18,10 @@ What is functional programming?
 
 > I fear not the man who has practiced 10,000 kicks once, but I feat the man who has
 > practiced one kick 10,000 times.
-> - *Bruce Lee*
-
-> It is better to have 100 functions operate on one data structure 
+> *Bruce Lee*
+> It is better to have 100 functions operate on one data structure
 > than 10 functions on 10 data structures
-> - *Alan Perils*
+> *Alan Perils*
 
 ## Functional Programming Data Structures
 
@@ -55,7 +54,7 @@ OOP vs. FP
 
 ## Generic Type Signature
 
-```
+```elixir
 findAuthor :: (a, [a]) -> [a]
 ```
 
@@ -71,13 +70,13 @@ The signature above denotes a function that receives `a` which is any type, and 
 
 *Type signaturess show how functions can be chained*
 
-Several functional programming languages have developed an operator called `pipe`. 
+Several functional programming languages have developed an operator called `pipe`.
 
-```
+```elixir
 funcA([a]) |> funcB()
 ```
 
-```
+```elixir
 loadFile('courses')
 |> splitOnNewLine()
 |> findAuthorCourses(author)
@@ -111,7 +110,7 @@ loadFile('courses')
 
 This is an example of how functional programming could "modify data" without chanding it:
 
-```
+```elixir
 def addToCart (cart, item) do
     %{
         items = cart.items.concat(item),
@@ -125,7 +124,7 @@ end
 ### Caching
 
 > **Memoization**
-> To speed up computer programs by storing the results of expensive function calls and 
+> To speed up computer programs by storing the results of expensive function calls and
 > returning the cached result when the same inputs occur again
 
 *Pure functions are easier to memoize*
@@ -135,5 +134,4 @@ end
 > **Lazy Evaluation**
 > delays the evaluation of an expression until its value is needed.
 
- **Lazy evaluation defers execution until the time it's actually needed**
-
+**Lazy evaluation defers execution until the time it's actually needed**

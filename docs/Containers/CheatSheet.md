@@ -5,7 +5,7 @@
 ### Running a container
 
 ```base
-$ docker run --name <my-container-name> -d <image:tag> -e KEY=VALUE
+docker run --name <my-container-name> -d <image:tag> -e KEY=VALUE
 ```
 
 Where:
@@ -18,8 +18,9 @@ Where:
 ### Getting into a container
 
 ```bash
-$ docker exec -it <container-name> command (e.g. /bin/bash)
+docker exec -it <container-name> command (e.g. /bin/bash)
 ```
+
 Where:
 
 * -it: stands for `interacting`, which means that you will be in the containers terminal.
@@ -27,19 +28,19 @@ Where:
 ### Listing all containers:
 
 ```bash
-$ docker ps -a
+docker ps -a
 ```
 
 ### Listing Running Containers
 
 ```bash
-$ docker ps
+docker ps
 ```
 
 ### Removing all containers
 
 ```bash
-$ docker container rm $(docker container ls -aq)
+docker container rm $(docker container ls -aq)
 ```
 
 ## Images
@@ -47,25 +48,25 @@ $ docker container rm $(docker container ls -aq)
 ### Listing Docker Images
 
 ```bash
-$ docker image ls
+docker image ls
 ```
 
 OR
 
 ```base
-$ docker images
+docker images
 ```
 
 ### Building a Docker Image without Cache
 
 ```bash
-$ docker build --no-cache -t <image-name-tab> .
+docker build --no-cache -t <image-name-tab> .
 ```
 
 ### Deleting Docker Images
 
 ```base
-$ docker image rm <id>
+docker image rm <id>
 ```
 
 ## System
@@ -73,5 +74,5 @@ $ docker image rm <id>
 ### Completely clear all cache
 
 ```bash
-$ docker system prune
+docker system prune
 ```

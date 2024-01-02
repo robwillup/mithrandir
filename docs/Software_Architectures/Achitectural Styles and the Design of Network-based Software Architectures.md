@@ -1,7 +1,6 @@
-# Architectural Styles and the Design of Network-based Software Architectures
-## by Roy Thomas Fielding
+## Architectural Styles and the Design of Network-based Software Architectures by Roy Thomas Fielding
 
-Software architecture research investigates methods for determining how best to partition a system, how components identify and comunicate with each other, how information is communicated, how elements of a system can evolve independently, and how all of the above can be described using formal and informal notations. 
+Software architecture research investigates methods for determining how best to partition a system, how components identify and comunicate with each other, how information is communicated, how elements of a system can evolve independently, and how all of the above can be described using formal and informal notations.
 
 An architectural style is a named, coordinated set of architectural constraints.
 
@@ -20,6 +19,3 @@ How often we see software projects begin with adoption of the lates fad in archi
 ### 1.1 Run-time Abstraction
 
     A **software architecture* is an abstraction of the run-time elements of a software system during some phase of its operation. A system may be composed of many levels of abstraction and many phases of operation, each with its own software architecture.
-
-At the heart of software architecture is the principle of abstraction: hiding some of the 
-

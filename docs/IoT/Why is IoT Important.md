@@ -4,7 +4,6 @@
 * IoT will touch everything
 * Everything will have IoT
 
-
 ## Ideal IoT
 
 * Ubiquitous

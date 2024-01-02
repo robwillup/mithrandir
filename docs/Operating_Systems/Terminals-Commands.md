@@ -1,24 +1,24 @@
-# Running a command multiple times
+## Running a command multiple times
 
 for i in {< START >..< FINISH >}; do < COMMAND > ; done
 
 ```bash
-$ for i in {1..10}; do dotnet test ; done
+for i in {1..10}; do dotnet test ; done
 ```
 
-# Linux
+### Linux
 
 •  cd: Changes the current directory:
 
 ```bash
-$ cd ..
-$ cd /
+cd ..
+cd /
 ```
 
 •  chmod: Changes the protection of a file or directory
 
 ```bash
-$ chmod 777
+chmod 777
 ```
 
 •  chown: Changes the owner of a file or directory
@@ -32,7 +32,7 @@ $ chmod 777
 •  grep: Searches a file for a pattern, which is a very useful filter:
 
 ```bash
-$ cat a.txt | grep ola 
+cat a.txt | grep ola 
 ```
 
 •  gzip: Compresses or expands a file
@@ -56,8 +56,7 @@ $ cat a.txt | grep ola
 •  uniq: Reports or deletes duplicated lines in a file
 •  wc: Count lines, words and even characters in a file
 
-
-# MS-DOS
+### MS-DOS
 
 DATE - Command to update the operating system’s Date
 
@@ -154,5 +153,3 @@ C:\del file.txt
 UNDELETE - This commands allows retrieving one or more deleted files, when possible
 
 DELTREE - This command eliminates one or more subdirectories
-
-
