@@ -1,5 +1,11 @@
 ## Version Control Systems
 
+**References:**
+
+* https://about.gitlab.com/topics/version-control/
+
+---
+
 What is version control? Also known as source control or revision control, version control is an important software development practice for tracking and managing changes made to code and other files. It is closely related to source code management.
 
 Version control allows you to track every change made to the code base, to see the entire history of who changed what at any given time, and to roll back from the current version to an earlier version if they need to. It also creates a single source of truth.
