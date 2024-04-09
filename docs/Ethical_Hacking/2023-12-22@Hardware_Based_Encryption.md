@@ -1,10 +1,10 @@
-## Hardware Based Encryption
+### Hardware Based Encryption
 
 This type of encryption uses computer hardware for assisting or replacing the software when data encryption is taking place.
 
 These hardware devices are capable of storing encryption keys and sensitive information in secured areas of RAM or other nonvolatile storage devices.
 
-### Hardware Encryption Devices
+#### Hardware Encryption Devices
 
 **Trusted Platform Module (TPM)**
 

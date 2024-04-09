@@ -1,4 +1,4 @@
-## Go Functions Zone - Act 1: Overview
+### Go Functions Zone - Act 1: Overview
 
 [Official Go documentation about functions](https://go.dev/doc/effective_go#functions)
 ___
@@ -9,13 +9,13 @@ This is a short Act, all you have to do to pass is to write your own Go function
 >
 > **Hint System:** I suppose we should start with that.
 
-### What is a function?
+#### What is a function?
 
 Think of a function as a tool. People use tools to transform things in order to perform a job or activity. Take a scissor for example. You can use a scissor over and over again to transform a material (paper, plastic, etc.) into a modified version (trimmed, cut, etc.)
 
 In a programming language, a function is very similar to this idea. It is a tool that an application uses one or more times to transform something (the input) into something else (the output).
 
-### What does a function in Go look like?
+#### What does a function in Go look like?
 
 Go has a special keyword that we can use to create a function: `func`.
 
@@ -35,7 +35,7 @@ The first thing in a function is that keyword `func`. Right after that comes the
 
 If your function takes parameters (input), you will add them between the parenthesis.
 
-### Parameters
+#### Parameters
 
 In Go, to specify parameters for your functions you first...
 
@@ -69,7 +69,7 @@ func work(p1, p2 float64) {
 }
 ```
 
-### Return Values
+#### Return Values
 
 In the physical world, a tool must yield a result from its work, for example, a sharpened pencil, or a trimmed paper sheet, etc. In the programming world, a function can return one or more values as a result of its operation.
 
@@ -91,7 +91,7 @@ func work(number int) (int, float64) {
 }
 ```
 
-### The Body
+#### The Body
 
 After this closing parenthesis, you will add an opening curly bracket `{`...
 
@@ -113,10 +113,10 @@ func double(p1 int) int {
 >
 > Write and run your function here:
 
-## The Go Playground
+### The Go Playground
 
 Visit the page below where you can write your function and run it in the browser to test it: [https://go.dev/tour/basics/4](https://go.dev/tour/basics/4)
 
-## Recap
+### Recap
 
 ![Go Function Parts](https://github.com/robwillup/mithrandir/blob/main/assets/images/go_functions_parts.jpeg?raw=true)

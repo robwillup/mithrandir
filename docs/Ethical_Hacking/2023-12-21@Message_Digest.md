@@ -1,8 +1,8 @@
-## Message Digest
+### Message Digest
 
 A message digest is also referred to as a hash value. This cryptography algorithmic type takes a block of data a produces a unique fingerprint or hash value of that data. This enables authentication to ensure the data has not been altered.
 
-### Message Digest Algorithms
+#### Message Digest Algorithms
 
 MD2, MD4, MD5, MD6 each one of these can be used in a digital signature program to compress data securely before it's signed by a private key. The resulting message digest always has a size of 128 bits.
 
