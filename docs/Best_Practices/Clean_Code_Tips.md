@@ -1,4 +1,4 @@
-# Clean Code Tips
+## Clean Code Tips
 
 Your code should be kept as short and simple as possible. This means that unnecessarily complex logic should not be used just for the sake of making
 the code look more sophisticated. That will actually prove the opposite. Break down your code into smaller functions or methods that perform
