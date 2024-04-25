@@ -25,3 +25,25 @@ para executar cada vez melhor as tarefas de reconhecimento de padrões.
 Entendo que organismos biológicos são excelentes no reconhecimento de padrões, e a estrutura e funções que possibilitam isso são a inspiração das redes neurais artificiais.
 
 > O estudo das RNAs é importante para o desenvolvimento tecnológico dos dias atuais.
+
+#### Propriedades das RNA
+
+* Não linearidade
+* Mapeamento de entrada-saída
+ * Para cada estímulo há uma saída.
+* Adaptabilidade
+* Resposta a evidências
+* Informação contextual
+* Tolerância a falhas
+* Implementação em hardware
+* Analogia neurobiológica
+
+#### Breve Histórico
+
+Descoberta do neurônio/primeiro modelo
+
+* Os neurônios biológicos foram descoberts no início do século XX pelo neurofisiologista espanhol Santiago Ramon y Cajal (1852-1934)
+* Em 1943, a área de estudo de redes neurais artificias nasce com a primeira modelagem, de McCulloch e Pitts, de um neurônio artificial
+* Perceptron: As RNA se popularizam a partir da pesquisa de Frank Rosenblatt com a criação do perceptron, um classificador binário baseado em
+entradas provenientes de sensores e que podia decidir se tais entradas pertenciam a uma classe específica
+
