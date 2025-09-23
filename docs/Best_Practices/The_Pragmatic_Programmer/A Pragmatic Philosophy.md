@@ -70,4 +70,9 @@ closing yourself and trying to learn all on your own. You become more brittle an
 > your resume. The process of learning will expand your thinking, opening you to new possibilities and new ways of
 > doing things.
 
-### Critical Thinking
+## Critical Thinking
+
+> Think critically about what you read and hear. Never underestimate the power of commercialism. Just because a web
+> search engine lists a hit first doesn't mean that it's the best match: the content provider can pay to get top
+> billing. Just because a book store features a book prominently doesn't mean it's a good book, or even popular, they
+> may have been paid to place it there.
