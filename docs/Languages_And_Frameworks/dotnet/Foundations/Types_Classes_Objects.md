@@ -34,5 +34,33 @@ public class Employee(string name, int age)
 }
 ```
 
+## Doing more with Classes and Custom Types
+
+### Namespaces
+
+They are used to avoid name collisions.
+- Keep class names separate
+- Used throughout .NET
+- Organize our own classes in custom namespaces
+- Make namespace available through the `using` directive.
+- Visual Studio creates by default a root namespace which is the name of your project.
+- You can use file-scoped Namespaces since C# 10.
+
+### Static types
+
+Defining a field as static means that it's defined on the class level as opposed to on the instance.
+Those fields cannot be accessed through the instances. You need to access them through the class.
+
+### Working with Nulls
+
+```CSharp
+Employee employee; // employee is null. We created the variable in the stack but it points to null.
+employee = new(); // Now it has an object in the heap.
+```
+
+### Garbage collection
+
+This is a process that runs automatically and will remove objects from the heap that no longer have active references.
+This process is a feature of the .NET CLR.
 
 
