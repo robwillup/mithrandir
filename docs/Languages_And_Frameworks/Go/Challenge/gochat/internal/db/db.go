@@ -1,14 +1,15 @@
 /*
 * Setup Postgres connection with sqlx.
 * Provide user lookup, insert functions.
-*/
+ */
 
 package db
 
 import (
 	"log"
+
 	"github.com/jmoiron/sqlx"
-	"github.com/lib/pq"
+	_ "github.com/lib/pq"
 )
 
 var DB *sqlx.DB
@@ -20,4 +21,3 @@ func Init(dataSourceName string) {
 		log.Fatalf("Failed to connect to DB: %v", err)
 	}
 }
-

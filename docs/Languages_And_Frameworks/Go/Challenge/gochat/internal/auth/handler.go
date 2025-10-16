@@ -2,15 +2,16 @@
 * Gin HTTP handlers for:
 *  - POST /register to create user with hashed password.
 *  - POST /login to verify password, generate, and return JWT token.
-*/
+ */
 
 package auth
 
 import (
-	"net/http"
-	"github.com/gin-gonic/gin"
 	"gochat/internal/db"
 	"gochat/internal/models"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 type RegisterRequest struct {
@@ -19,8 +20,8 @@ type RegisterRequest struct {
 }
 
 type LoginRequest struct {
-	UserName string `json:"username" binding:"required"`
-	Password string `json:"username" binding:"required"`
+	Username string `json:"username" binding:"required"`
+	Password string `json:"password" binding:"required"`
 }
 
 func Register(c *gin.Context) {
@@ -41,5 +42,33 @@ func Register(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http)
+	c.JSON(http.StatusCreated, gin.H{"message": "User registered successfully"})
+}
+
+func Login(c *gin.Context) {
+	var req LoginRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid input"})
+		return
+	}
+
+	var user models.User
+	err := db.DB.Get(&user, "SELECT * FROM users WHERE username=$1", req.Username)
+	if err != nil {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid username or password"})
+		return
+	}
+
+	if !CheckPasswordHash(req.Password, user.PasswordHash) {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid username or password"})
+		return
+	}
+
+	token, err := GenerateJWT(user.Username)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to generate token"})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"token": token})
 }
