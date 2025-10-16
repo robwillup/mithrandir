@@ -1,0 +1,23 @@
+/*
+* Setup Postgres connection with sqlx.
+* Provide user lookup, insert functions.
+*/
+
+package db
+
+import (
+	"log"
+	"github.com/jmoiron/sqlx"
+	"github.com/lib/pq"
+)
+
+var DB *sqlx.DB
+
+func Init(dataSourceName string) {
+	var err error
+	DB, err = sqlx.Connect("postgres", dataSourceName)
+	if err != nil {
+		log.Fatalf("Failed to connect to DB: %v", err)
+	}
+}
+
