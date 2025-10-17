@@ -5,3 +5,10 @@ CREATE TABLE users (
     created_at TIMESTAMPTZ DEFAULT now()
 );
 
+CREATE TABLE messages (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    content TEXT NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT now(),
+    is_bot BOOLEAN DEFAULT FALSE
+);
