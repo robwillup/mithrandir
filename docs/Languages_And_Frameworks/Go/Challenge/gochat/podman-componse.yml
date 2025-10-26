@@ -14,7 +14,7 @@ services:
       - ./scripts/init_db.sql:/docker-entrypoint-initdb.d/init_db.sql:ro
 
   app:
-    build: .
+    build: .//
     restart: always
     environment:
       DATABASE_URL: postgres://gochatuser:gochatpass@db:5432/gochatdb?sslmode=disable

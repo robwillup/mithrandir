@@ -11,4 +11,4 @@ CREATE TABLE messages (
     content TEXT NOT NULL,
     created_at TIMESTAMPTZ DEFAULT now(),
     is_bot BOOLEAN DEFAULT FALSE
-);
+);      

@@ -13,13 +13,13 @@ import (
 	"gochat/internal/chat"
 	"gochat/internal/db"
 	"log"
-	"os"
 
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	dsn := os.Getenv("DATABASE_URL")
+	dsn := "postgres://admin:secret@localhost:5432/gochat?sslmode=disable" //os.Getenv("DATABASE_URL")
+	print(dsn)
 	db.Init(dsn)
 
 	r := gin.Default()
