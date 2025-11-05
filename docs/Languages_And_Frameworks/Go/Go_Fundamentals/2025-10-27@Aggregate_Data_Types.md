@@ -67,6 +67,51 @@ fmt.Println(s)       // [1 99 3 5 7]
 
 s = slices.Delete(s, 1, 3) // remove indices 1, 2 from slice
 
+s == s2             // Compile time error. Slices are not comparable in Go. You need to use the slices package.
+```
 
+## Understanding Maps
+
+Maps associate values to keys.
+
+```Go
+var m map[string]int                               // declare a map. Key is string, values integers
+fmt.Println(m)                                     // map[] (nil)
+m = map[string]int{"foo": 1, "bar": 2}             // map[foo:1 bar:2]
+
+fmt.Println(m["foo"])                              // lookup value in map
+m["bar"] = 99                                      // update value in map
+
+delete(m, "foo")                                   // remove entry from map
+m["baz"] = 418                                     // add value to map
+
+fmt.Println(m["foo"])                              // 0 - queries always return results. Even if not there, the zero value for the type is returned.
+v, ok := m["foo"]                                  // comma okay syntax verifies presents. True if value came from the map, false to indicate it's a zero value.
+```
+
+To copy maps, if you just use the assignment operator that's going to copy by reference.
+To copy the map by value, you need to use the `maps.Clone` function.
+
+Because maps are also reference type, they cannot be compared with `==`.
+
+## Understanding Structs
+
+We can associate multiple data types together.
+
+```Go
+var s struct{                        // Declare an anonymous struct
+    name    string
+    id      int
+}
+
+fmt.Println(s)                       // {"" 0} -- structs are value types. If it was reference, the zero values for the members would be nil.
+
+s.name = "Arthur"
+
+
+type myStruct struct{                // create custom type based on struct
+    name    string
+    id      int
+}
 ```
 
