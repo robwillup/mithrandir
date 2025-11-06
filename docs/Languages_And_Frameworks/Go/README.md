@@ -22,12 +22,11 @@ Also Go has a type system that enables flexible and modular program construction
 
 Go
 
-* compiles quickly to machine code.
-* has garbabe collection
+* compiles quickly to machine code
+* has garbage collection
 * has run-time reflection
 * is fast
 * statically typed
-* compiled
 
 ## [The Go Programming Language - Book Study](./The%20Go%20Programming%20Language%20Book/README.md)
 
