@@ -27,5 +27,25 @@ The fallacies of distributed systems.
 * The system is finished
 * Business logic can and should be centralized
 
+# Fallacies of Network application
 
+## Fallacy 1: The network is reliable
+
+* Solutions
+  * Retry & Ack / Store & Forward / Transactions
+    * Don't roll your own - too many edge cases
+  * Use reliable messaging infrastructure
+    * RabbitMQ
+    * etc.
+
+But these don't have a request/response synchronous method-centric model.
+
+## Fallacy 2: Latency isn't a problem
+
+* Time to cross the network in one direction. Serialization/deserialization does not count.
+
+* Solutions
+  * Don't cross the network if you don't have to
+  * Inter-object chit-chat shouldn't cross the network
+  * If you have to cross the network, take all the data you might need with you.
 
