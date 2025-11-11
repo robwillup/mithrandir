@@ -45,4 +45,60 @@ Data -> Machine Learning Platform -> Train a model -> Deploy the Model
 * Azure Machine Learning Designer
   * Create a pipeline to train a machine learning model, without writing code, using a drag-and-drop interface
 
+### Types of Machine Learning
+
+#### regression
+
+* Use historical data to predict a numerical value
+* Finding the price of a car based on its Features
+* The historical data will include features and labels
+* Predicting a numerical value is called regression
+
+#### Classification
+
+A form of machine learning that is used to predict which category or class an item belongs to
+
+##### Classification Types
+
+* Binary Classification - looking for one of two options
+* Multi-class classification - multiple possible options
+
+Both Regression and Classification use historical data with known features and labels to trains the machine learning
+model. This is known as **Supervised Learning**.
+
+#### Clustering
+
+Group similar items into clusters based on their features. An example is grouping flowers based on petal count,
+petal size, leaf size, etc.
+
+This is **unsupervised learning**
+
+#### Supervised vs unsupervised
+
+|Supervised|Unsupervised|
+|:---------|:-----------|
+|The data includes known features and label| The data has features but no known labels|
+|Trying to predict something| Trying to group similar items|
+
+#### Deep Learning
+
+Uses a structure of artificial neural networks. This consists on multiple types of inputs, outputs, and even hidden layers.
+
+Deep learning allows a machine to train itself!
+
+#### Machine Learning vs Deep Learning
+
+| Machine Learning | Deep Learning |
+|:-----------------|:--------------|
+| Can use small amounts of data | Need to use a large amount of data |
+| Works on low-end machines | Requires high-end machines |
+| Requires features to be identified by the end user| Learns features and can create new features |
+| Trains quickly - minutes, hours | Slow to train |
+| Outputs are (usually) one format - numeric or class| Output can have multiple formats |
+
+##### Deep Learning Use cases
+
+* Identifying patterns in unstructured data
+* Image caption generation
+* Automatic text and speech translation
 
