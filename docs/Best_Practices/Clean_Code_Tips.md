@@ -116,5 +116,10 @@ I don't think anyone could.
 Switch statements by definition will span across multiple lines. So they must be buried in a low-level class and never
 repeated. We do this with polymorphism.
 
+## Comments
 
+Comments are always failures. We must have them because we cannot always figure out how to express ourselves without
+them.
+
+## formatting
 
