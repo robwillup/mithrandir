@@ -24,18 +24,22 @@ In a standard algorithm question, only the first three might matter.
 
 ### False negatives are acceptable
 
-From the company's perspective, it's acceptable to miss out on some good people. They are far more concerned with false positives: people who do well in an interview but are not in fact very good.
+From the company's perspective, it's acceptable to miss out on some good people. They are far more concerned with
+false positives: people who do well in an interview but are not in fact very good.
 
 This means you have to be very good.
 
 ### Problem-solving skills are valuable
 
-If you're able to work through several hard problems, you're probably very good at developing optimal algorithms. You're smart.
+If you're able to work through several hard problems, you're probably very good at developing optimal algorithms.
+You're smart.
 
 ### Basic data structure and algorithm knowledge is useful
 
-Basic computer science knowledge is useful. Understanding trees, graphs, lists, sorting, and other knowledge does come up periodically. That knowledge is also a good "proxy", they are reasonably well-correlated with being a good developer.
+Basic computer science knowledge is useful. Understanding trees, graphs, lists, sorting, and other knowledge does come
+up periodically. That knowledge is also a good "proxy", they are reasonably well-correlated with being a good
+developer.
 
 ### Whiteboards let you focus on what matters
 
-Focus on solving the problem without worrying about environment.
+Focus on solving the problem without worrying about environment and compilation problems.
