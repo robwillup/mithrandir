@@ -47,7 +47,7 @@ Data -> Machine Learning Platform -> Train a model -> Deploy the Model
 
 ### Types of Machine Learning
 
-#### regression
+#### Regression
 
 * Use historical data to predict a numerical value
 * Finding the price of a car based on its Features
@@ -101,4 +101,5 @@ Deep learning allows a machine to train itself!
 * Identifying patterns in unstructured data
 * Image caption generation
 * Automatic text and speech translation
+
 
