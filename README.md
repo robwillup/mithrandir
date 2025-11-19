@@ -1,6 +1,6 @@
 # Software Engineering & Computer Science Notebook
 
-Computer science, software engineering and other technology study notes.
+Computer science, software engineering and other technologies study notes.
 
 <div align="center">
   <img width=230 height=300 src="assets/images/gandalf.jpg">
