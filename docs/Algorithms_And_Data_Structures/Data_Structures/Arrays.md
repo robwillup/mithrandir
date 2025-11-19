@@ -1,6 +1,6 @@
 # Arrays for Super Dummies
 
-**Description:** An array is a collection of elements identified by index or key.
+**Description:** An array is a collection of contiguous elements identified by index or key.
 
 **Operations:** Accessing, updating, iterating, inserting, and deleting elements.
 
