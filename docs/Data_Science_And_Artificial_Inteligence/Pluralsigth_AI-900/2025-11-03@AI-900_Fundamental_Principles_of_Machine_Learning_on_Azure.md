@@ -102,4 +102,22 @@ Deep learning allows a machine to train itself!
 * Image caption generation
 * Automatic text and speech translation
 
+### Training, Validation, and Datasets
 
+#### Data Preparations
+
+Before using a dataset to train a model, you should prepare the data.
+
+- There might be missing data or null values
+  - Removing or replacing rows with missing data is commonly called `cleaning the data`
+- `Normalization` will convert the values to be on the same scale from 0-1
+
+#### Training our models
+
+Algorithm -> Train model
+
+#### Validation
+
+It's common practice to split your data into training and validation sets.
+You hold back some of the data and then use it to compare and see if the model is doing well.
+This will enable us to compare actual values to predict values.

@@ -4,15 +4,19 @@
 
 ## Hash Tables
 
-A hash table is a data structure that maps keys to values for highly efficient lookup. So this is similar to dictionaries.
-Hash tables benefit from fast data retrieval and are foundational to standard tools and techniques like caching and database indexing.
-There are a number of ways of implementing this. Here let's see a common but simple interpretation.
+A hash table is a data structure that maps keys to values for highly efficient lookup. So this is similar to
+dictionaries. Hash tables benefit from fast data retrieval and are foundational to standard tools and techniques like
+caching and database indexing. There are a number of ways of implementing this. Here let's see a common but simple
+interpretation.
 In this implementation an array of linked lists and a hash code function are used. To insert a key - which
 might be a string or essentially any other data type - and value, this is what is done:
 
 1. First, compute the key's hash code, which will usually be an int or long. Note that two different keys
-could have the same hash code, as there may be an infinite number of keys and a finite number of ints.
-2. Then, map the hash code to an index in the array. This could be done with something like `hash (key) % array_length`. Two different hash codes could, of course, map to the same index.
+   could have the same hash code, as there may be an infinite number of keys and a finite number of ints.
+
+2. Then, map the hash code to an index in the array. This could be done with something like `hash (key) % array_length`.
+   Two different hash codes could, of course, map to the same index.
+
 3. At this index, there is a linked list of keys and values. Store the key and value in this index. We must
 use a linked list because of collisions: you could have two different keys with the same hash code, or two
 different hash codes that map to the same index.
@@ -20,20 +24,22 @@ different hash codes that map to the same index.
 To retrieve the value by its key, you repeat this process. Compute the hash code from the key, and then
 compute the index from the hash code. Then, search through the linked list for the value with this key.
 
-If the number of collisions is very high, the worse case runtime is O(N), where N is the number of keys. However, we generally assume a good implementation that keeps collisions to a minimum, in which case the
-look up time is O(1).
+If the number of collisions is very high, the worse case runtime is O(N), where N is the number of keys. However, we
+generally assume a good implementation that keeps collisions to a minimum, in which case the look up time is O(1).
 
-Alternatively, we can implement the hash table with a balanced binary search tree. This gives us an O(log N) lookup time. The advantage of this is potentially using less space, since we no longer allocate a large
-array. We can also iterate through the keys in order, which can be useful sometimes.
+Alternatively, we can implement the hash table with a balanced binary search tree. This gives us an O(log N) lookup
+time. The advantage of this is potentially using less space, since we no longer allocate a large array. We can also
+iterate through the keys in order, which can be useful sometimes.
 
 ## ArrayList & Resizable Arrays
 
-In some languages, arrays (often called lists in this case) are automatically resizable. The array or list
-will grow as you append items. In other languages, like Java, arrays are fixed length. The size is defined when you create the item.
+In some languages, arrays (often called lists in this case) are automatically resizable. The array or list will grow
+as you append items. In other languages, like Go, arrays are fixed length. The size is defined when you create the item.
 
-When you need an array-like data structure that offers dynamic resizing, you would usually use an ArrayList. An ArrayList is an array that resizes itself as needed while still providing O(1) access. A
-typical implementation is that when the array is full, the array doubles in size. Each doubling takes O(n),
-but happens so rarely that its amortized insertion time is still O(1).
+When you need an array-like data structure that offers dynamic resizing, you would usually use an ArrayList
+(slice in Go). An ArrayList is an array that resizes itself as needed while still providing O(1) access. A typical
+implementation is that when the array is full, the array doubles in size. Each doubling takes O(n), but happens so
+rarely that its amortized insertion time is still O(1).
 
 ```java
 ArrayList<String> merge(String[] words, String[] more) {
@@ -45,8 +51,9 @@ ArrayList<String> merge(String[] words, String[] more) {
 ```
 
 This is an essential data structure for interviews. Be sure you are comfortable with dynamically resizable
-arrays/lists in whatever language you will be working with. Note that the name of the data structure as well as the "resizing factor" (which is 2 in Java) can vary. In C#, the data structure is also called
-`ArrayList` and it also doubles every time capacity is exceeded.
+arrays/lists in whatever language you will be working with. Note that the name of the data structure as well as the
+"resizing factor" (which is 2 in Java) can vary. In C#, this data structure is also called `ArrayList` and it also
+doubles every time capacity is exceeded.
 
 ```csharp
 ArrayList resizableArray = new(1); // The '1' passed to the constructor is the initial capacity. Optional.
@@ -63,6 +70,15 @@ Console.WriteLine(resizableArray[2]);
 // Capacity: 2 - Count: 2
 // Capacity: 4 - Count: 3
 // 2
+```
+
+In Go, this data structure is called `slice` and it also has its capacity doubled when limit is exceeded.
+
+```go
+s := []string {"Peter"}
+fmt.Println(cap(s)) // 1
+s = append(s, "John")
+fmt.Println(cap(s)) // 2
 ```
 
 Why is the amortized insertion runtime O(1)?
