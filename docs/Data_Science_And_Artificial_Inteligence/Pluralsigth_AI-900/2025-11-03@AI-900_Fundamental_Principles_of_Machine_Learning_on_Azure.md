@@ -121,3 +121,38 @@ Algorithm -> Train model
 It's common practice to split your data into training and validation sets.
 You hold back some of the data and then use it to compare and see if the model is doing well.
 This will enable us to compare actual values to predict values.
+
+#### Evaluation
+
+Metrics like R Squared
+
+Root Mean Squared Error: The highest the number the worse.
+
+Coefficient of Determination (R Squared): the highest the better.
+
+### Classification models
+
+#### Confusion Matrix
+
+How we can score and evaluate a classification model.
+
+(Actual Known Values on top row)
+
+|---|Positive|Negative|
+|:--|:--|:--|
+|Positive|True Positive|False Positive|
+|Negative|False Negative|True Negative|
+
+^
+Predicted values on first column
+
+### Algorithm Cheat Sheet
+
+* Two-Class Support Vector Machine <-- Under 100 features, linear model
+* Two-Class Averaged Perception    <-- Fast training, linear model
+* Two-Class Decision forest        <-- Accurate, fast training
+* Two-Class Logistic Regression    <-- Fast training, linear model
+* Two-Class Boosted decision tree  <-- Accurate, fast training, large memory footprint
+* Two-Class Neural Network         <-- Accurate, long training times
+
+
