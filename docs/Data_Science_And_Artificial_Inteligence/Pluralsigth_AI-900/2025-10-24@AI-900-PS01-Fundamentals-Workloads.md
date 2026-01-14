@@ -1,4 +1,5 @@
-# AI900 - Workloads
+# Microsoft Azure AI Fundamentals (AI-900)
+## Artificial Intelligence workloads and considerations
 
 [Official Exam Page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification)
 
@@ -148,7 +149,7 @@ So that any user can have access to it.
 
 Users should be fully aware of how the system works and what the limitations are.
 
-#### Accountability 
+#### Accountability
 
 People should be held accountable for AI systems.
 AI systems should follow governance and frameworks.

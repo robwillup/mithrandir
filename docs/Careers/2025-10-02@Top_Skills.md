@@ -5,7 +5,7 @@
 - Critical thinking
 - Emotional Intelligence
 - Originality
-- Criativity
+- Creativity
 - People management
 - Judgement & decision making
 - Fluency of ideas
