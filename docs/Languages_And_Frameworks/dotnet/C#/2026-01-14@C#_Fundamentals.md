@@ -11,6 +11,12 @@ support.
 
 ---
 
+### More C# definitions for my memorization
+
+C# is a modern, innovative, open-source, cross-platform, object-oriented programming language.
+
+---
+
 **devinterview.io**
 
 C# is an object-oriented, multi-paradigm programming language developed by Microsoft as part of its .NET initiative.
@@ -34,3 +40,8 @@ Key features of C#:
 15. Native Code Execution: C# apps are executed through the Common Language Runtime (CLR), making it cross-platform.
 16. Exception handling: It utilizes a structured error-handling approach, making it easier to reason about issues.
 
+## Memory Management in C#
+
+C# uses the Garbage Collector (GC) for automatic memory management. The GC identifies and removes objects that are no
+longer in use, optimizing memory consumption. However, improper memory handling can lead to memory leaks or
+inefficient GC performance, underscoring the need for developer awareness.
