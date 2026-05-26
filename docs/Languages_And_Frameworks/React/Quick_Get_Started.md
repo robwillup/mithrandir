@@ -2,19 +2,37 @@
 
 ## What is React
 
-It's a library for web a native user interfaces.
+It's a JavaScript library for web a native user interfaces. It was created by Facebook.
 
-You design simple views for each state in your app, and React takes care of
-updating and rendering just the right components when your data changes.
+The core concept is **components** - reusable, isolated pieces of UI that can manage their own state.
 
-Declarative views make your code more predictable and easier to debug.
+* Everything in React is a component - header, button, entire page
+* Components can be functional (using functions) or class-based (older method)
+
+Example of simple functional component:
+
+```react
+function WelcomeButton() {
+    return (
+        <button>
+          Click me!
+        </button>
+    );
+}
+```
+This component returns JSX - the button HTML-like syntax - that React will render to the DOM.
+
+### Working with Components
+
+You design simple views for each state in your app, and React takes care of updating and rendering just the right components when your data changes.
+
+`Declarative` views make your code more predictable and easier to debug.
 Declarative is a programming paradigm where you describe *what* your program should do.
 SQL, HTML, functional programming languages, and React are examples of declarative programming.
 
-React is also Component-Based. That means you can build encapsulated components that manage
-their own state, then compose them to make complex UIs.
+React is also Component-Based. That means you can build encapsulated components that manage their own state, then compose them to make complex UIs.
 
-React can also render on the server using Node and power mobile apps using React Native.
+> ℹ️ React can also render on the server using Node and power mobile apps using React Native.
 
 What are the features of React?
 
@@ -24,10 +42,9 @@ What are the features of React?
 * the composition of components
 * one-way data biding
 
-What is a higher-order components (HOC)?
+#### What is a higher-order components (HOC)?
 
-A higher-order component is a function that takes a component and returns a new
-component. It helps reuse component logic.
+> A higher-order component is a function that takes a component and returns a new component. It helps reuse component logic.
 
 ## Stuff I must know for the interview
 
@@ -132,6 +149,41 @@ Define types/interfaces for component props and state:
 interface Props { name: string }
 const Component: React.FC<Props> = ({ name }) => { ... }
 ```
+
+### Props: Passing Data to Components
+
+Props (short for properties) are how you pass data from parent to child components. They're like function parameters but for React components.
+
+Key ideas:
+- Props make components reusable with different data
+- Props are read-only (immutable) - you can't change them inside the component
+- Props are passed as attributes in JSX
+- Props are received as the first parameter of a functional component
+
+Example:
+
+```react
+// Child component that receives props
+function UserCard({ name, age }) {
+    return (
+      <div>
+        <h2>{name}</h2>
+        <p>Age: {age}</p>
+      </div>
+    );
+}
+
+// Parent component passing props
+function App() {
+    return (
+      <div>
+        <UserCard name="Bob" age={20} />
+      </div>
+    );
+}
+```
+Notice how `{name}` and `{age}` inside the child component are destructuring the props object, and when passing props we use `{20}` for the number
+(JavaScript expression) but `"Bob"` for the string (literal).
 
 3. Typing Events
 
